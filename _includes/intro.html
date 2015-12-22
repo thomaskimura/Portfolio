@@ -1,0 +1,18 @@
+<main role="main">
+
+  <header class="padding-tb6 color-bg-dark-600" {{ page.background-color }}>
+    <div class="row animation slideup">
+      <div class="large-8 medium-8 small-11 columns small-centered">
+        <h1 class="margin-none text-lightest text-center text-letterspacing-2">
+          {% if page.headline %}
+            {{ page.headline }}
+          {% else %}
+            Kimura Digital
+          {% endif %}
+        </h1>
+        <h2 class="margin-none text-bigger text-center text-lightest text-weight-300 text-family-default opacity-2">
+          {{ page.subline }}
+        </h2>
+      </div>
+    </div>
+  </header>

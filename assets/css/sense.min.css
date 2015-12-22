@@ -1,0 +1,48 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+.sense-text, .sense-demo {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  background-color: #133149;
+}
+
+.work-headline {
+  color:#fff03b !important;
+}
+.work-subline {
+  color: #eaf1f4; !important;
+}
+.work-header-link {
+  color: #ffffff; !1b435d;
+}
+.work-header-button {
+  color: #ffffff; !1b435d;
+  background-color: #183f5d;
+}
+.work-nav-links {
+  color: #eaf1f4; !important;
+}
+.sense-color-bg-primary-400{
+  background:#183f5d;
+}
+.sense-color-bg-calm {
+  background: #c1e1f7;
+}
+.sense-color-bg-royal {
+  background: #632de8;
+}
+.sense-color-bg-yellow {
+  background: #fff03b;
+}
+
+.sense-color-text {
+  color: #133149;
+}
+.sense-color-text-yellow {
+  color: #fff03b;
+}
+
+.chat-container{padding-left:2em;padding-right:2em;padding-top:0.5em;padding-bottom:0.5em;width:100%;border-radius:10px;max-width:419px;display:block;margin:0 auto}@media (max-width: 660px){.chat-container{width:300px}}@media (max-width: 500px){.chat-container{width:263px}}.chat-inner{display:inline-block;width:100%;max-width:347px}@media (max-width: 660px){.chat-inner{max-width:236px}}@media (max-width: 500px){.chat-inner{max-width:207px}}.chat{margin-top:0.5em;margin-bottom:0.5em;border-radius:20px;max-width:80%}.chat span{height:8px;width:8px;border-radius:50%;display:inline-block}.chat .blink-right{background-color:white}.chat .blink-left{background-color:white}.chat .blink-fix-right{right:65px}.chat #typing-indicator-one{animation-name:blink;animation-duration:1.5s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}.chat #typing-indicator-two{animation-name:blink;animation-duration:1.5s;animation-delay:0.3s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}.chat #typing-indicator-three{animation-name:blink;animation-duration:1.5s;animation-delay:0.6s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}@keyframes blink{0%{opacity:0.1}50%{opacity:0.5}100%{opacity:0.1}}.chat-left{position:relative;padding:0.5em 1em 0.5em 1em;background:#133149;color:rgba(234,241,244,0.8);float:left;border-bottom-left-radius:0px}.chat-right{text-align:right;position:relative;padding:0.5em 1em 0.5em 1em;background:#1e4c71;color:#eaf1f4;float:right;border-bottom-right-radius:0px}.rsWebkit3d{-webkit-backface-visibility:hidden;-webkit-transform:translateZ(0)}
+/*# sourceMappingURL=style.min.css.map */

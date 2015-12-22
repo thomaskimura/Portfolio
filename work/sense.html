@@ -1,0 +1,218 @@
+---
+layout: default
+title: Sense Technologies Case Study | Kimura Digital
+headline: Sense
+description: I'm a Toronto freelancer solving challenges with digital solutions. I build websites & help businesses grow.
+subline: Building a complelling site for the best SMS based movie recommendation service.
+work-url: http://www.wemakesense.co/
+thumbnail:
+no-follow:
+outro: yes
+prettify:
+permalink: work/sense/
+background-color: style="background-color:#133149;"
+custom_css:
+- sense.min
+custom_js:
+- sense
+---
+
+{% include work-intro.html %}
+
+<article class="color-bg-white">
+
+  <section>
+    <div class="row padding-tb3">
+      <div class="large-8 medium-8 small-11 columns small-centered">
+
+        <section>
+          <h3 class="margin-none-b">Back Story</h3>
+          <p class="margin-none-t text-big">
+            The Sense project started with a post on Reddit where I offered to build a simple website for any price. I was curious what feedback I’d get, but more importantly I wanted real world experience building something for a real business.
+          </p>
+          <p>
+            I got messages from a lot of hopeful business looking to take advantage of my offer. Eventually I narrowed this down to a single project. Sense.
+          </p>
+
+          <hr class="opacity-4">
+          <p class="text-bigger text-center padding-1">
+            Sense is a SMS based movie recommendation service. Just text Sense and you’ll get recommendations from a real human.
+          </p>
+        </section>
+        <hr class="opacity-4">
+
+        <section>
+          <h3 class="margin-none-b">Overview</h3>
+          <p class="margin-none-t">
+            Sense needed a way to easily showcase the service and engage users to try the it out. A large portion of the traffic was on mobile we wanted to make sure the website would load fast and snappy on all mobile devices. The goal of the redesign was to increase conversions on all devices. We wanted to clearly explain the service and allow users to send a text with the least friction as possible.
+          </p>
+          <p class="text-big">
+            <i>
+              The first problem was to convince people to text. The second problem was making the experience of going from the website to sms an easy transition.
+            </i>
+          </p>
+          <p>
+            Building an interactive chat animation allowed me kill two birds with one stone. This visual interaction captured the attention of new visitors and gave them a path to follow. Users knew exactly what to do to start using the service.
+          </p>
+          <p>
+            Mobile users were even given the option to directly open a text message and get a movie reccomendation. They simply clicked a button and a text message was pre-populated for the them. <i>Try it out below</i>.
+          </p>
+        </section>
+
+      </div>
+    </div>
+
+    <section>
+      <div class="sense-color-bg-primary-400 padding-tb2 sense-demo">
+
+        <!-- chat -->
+        <div class="chat-container position-relative">
+
+          <!-- chat one -->
+          <div class="chat-inner opacity-0 position-absolute rsWebkit3d" id="blink1">
+            <p class="chat chat-right">
+              <span class="blink-left" id="typing-indicator-one"></span>
+              <span class="blink-left" id="typing-indicator-two"></span>
+              <span class="blink-left" id="typing-indicator-three"></span>
+            </p>
+          </div>
+          <div class="chat-inner">
+            <!-- <p class="text-center text-light opacity2">Sense</p> -->
+            <p class="chat chat-right opacity-0" id="message1">I'm looking for a Netflix movie to watch</p>
+          </div></br>
+
+          <!-- chat two -->
+          <hr style="height:0pt; visibility:hidden; margin:0;" />
+          <div class="chat-inner opacity-0 position-absolute rsWebkit3d" id="blink2">
+            <p class="chat chat-left">
+              <span class="blink-left" id="typing-indicator-one"></span>
+              <span class="blink-left" id="typing-indicator-two"></span>
+              <span class="blink-left" id="typing-indicator-three"></span>
+            </p>
+          </div>
+          <div class="chat-inner">
+            <p class="chat chat-left opacity-0" id="message2">
+              Sure! What’s a movie you’ve seen and liked recently?
+            </p>
+          </div>
+
+          <!-- chat three -->
+          <hr style="height:0pt; visibility:hidden; margin:0;" />
+          <div class="chat-inner opacity-0 position-absolute rsWebkit3d" id="blink3">
+            <p class="chat chat-right">
+              <span class="blink-left" id="typing-indicator-one"></span>
+              <span class="blink-left" id="typing-indicator-two"></span>
+              <span class="blink-left" id="typing-indicator-three"></span>
+            </p>
+          </div>
+          <div class="chat-inner">
+            <p class="chat chat-right opacity-0" id="message3">Wolf of Wall Street cause I liked Jordan Belfort going totally crazy!
+            </p>
+          </div></br>
+
+          <!-- chat four -->
+          <hr style="height:0pt; visibility:hidden; margin:0;" />
+          <div class="chat-inner opacity-0 position-absolute rsWebkit3d" id="blink4">
+            <p class="chat chat-left">
+              <span class="blink-left" id="typing-indicator-one"></span>
+              <span class="blink-left" id="typing-indicator-two"></span>
+              <span class="blink-left" id="typing-indicator-three"></span>
+            </p>
+          </div>
+          <div class="chat-inner">
+            <p class="chat chat-left opacity-0" id="message4">Check out Buffalo Soldiers! Phoenix's character has traits similar to Belfort. Here's the <a class="sense-color-text-yellow" href="http://bit.ly/buffalosoldiers">trailer</a>.
+            </p>
+          </div>
+
+          <!-- reply -->
+          <div class="chat-inner mobile-only">
+            <p class="opacity-0 text-small full margin-none-t" id="reply1">
+              <a class="sense-color-text-yellow" href="sms:2132973673&body=Thanks for the recomendation. What's another movie I should watch?">Reply</a>
+            </p>
+          </div>
+
+        </div>
+        <!-- end chat -->
+
+        <div class="row">
+          <div class="large-8 medium-8 small-10 columns small-centered">
+            <p class="text-center sense-color-bg-yellow rounded">
+              <a href="sms:2132973673&body=Hey Sense, I need a movie!" class="sense-color-text text-decoration-none full padding-1">Get Started</a>
+            </p>
+            <p class="margin-none text-light text-center text-small">
+              Button only supported on mobile
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="row padding-tb3">
+      <div class="large-8 medium-8 small-10 columns small-centered">
+
+        <!-- <hr class="opacity-4">
+        <p class="text-bigger text-center padding-1">
+          This layout proved to very effective for Sense conversion rates. 6% of mobile visitors tried the service.
+        </p>
+        <hr class="opacity-4"> -->
+
+        <section>
+
+          <h3 class="text-center">Journey</h3>
+
+          <section>
+            <h4 class="margin-none-b">Sketching</h4>
+            <p class="margin-none-t">
+              The project started with a number of initial conversations with Jake Cohn (Founder of Sense). From here I was able to establish a much better idea of what the project needed. I gave Jake a solid schedule and followed up with rough sketches. From here I had a much better idea of where Jake wanted to take the Sense brand. With this information I was able to create an early colour pallete.
+            </p>
+            <div class="row">
+              <div class="small-5 margin-b1 columns">
+                <div class="color-box-top sense-color-bg-primary-400"></div>
+              </div>
+              <div class="small-3 margin-b1 columns">
+                <div class="color-box-top sense-color-bg-yellow"></div>
+              </div>
+              <div class="small-2 margin-b1 columns">
+                <div class="color-box-top sense-color-bg-calm"></div>
+              </div>
+              <div class="small-2 margin-b1 columns">
+                <div class="color-box-top sense-color-bg-royal"></div>
+              </div>
+
+            </div>
+          </section>
+
+          <section>
+            <h4 class="margin-none-b">Prototyping</h4>
+            <p class="margin-none-t">
+              Once sketching and brainstorming was complete I had a much better idea of the direction Jake wanted to take with this project. From here I went forwarded and began coding prototypes. This is where all the exciting stuff happens. Jake received regular updates to a live clickable prototype and I continually received feedback. At this point we worked through a number of iterations, changing and playing around with the design.
+            </p>
+          </section>
+
+          <div class="row">
+            <div class="large-6 small-12 columns">
+              <section>
+                <h4 class="margin-none-b">Optimization</h4>
+                <p class="margin-none-t">
+                  The Sense website then went through a final stage where I optimized it for usage with a custom CMS. At this point the site also went through more iterations in order to improve its performance and speed on mobile devices.
+                </p>
+              </section>
+            </div>
+            <div class="large-6 small-12 columns">
+              <section>
+                <h4 class="margin-none-b">Launch</h4>
+                <p class="margin-none-t">
+                  The day came when the site was ready to launch and everything went off without a hitch. Jake and I got on Skype and I walked him through all the steps he had to take to re-point his domain.  I gave Jake a rundown of how to use his new CMS and that was it. The website can now be updated as easy as editing a Google doc. 
+                </p>
+              </section>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+</article>
+
+</main>
