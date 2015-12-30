@@ -2,8 +2,8 @@
 layout: default
 title: Gifalytics Case Study | Kimura Digital
 headline: Gifalytics
-description: Creating an awesome & silly side project in a single weekend.
-subline: Creating an awesome & silly side project in a single weekend.
+description: Creating an awesome & silly sideproject in a single weekend.
+subline: Creating an awesome & silly sideproject in a single weekend.
 permalink: work/gifalytics/
 work-url: http://thomaskimura.github.io/Gifalytics/
 thumbnail:
@@ -11,11 +11,13 @@ no-follow:
 outro: yes
 prettify:
 dark-logo: yes
+slick: yes
 background-color: style="background-color:#d5eeff;"
 custom_css:
 - gifalytics
 custom_js:
 - gifalytics
+- slick.min
 ---
 
 {% include work-intro.html %}
@@ -26,7 +28,8 @@ custom_js:
     <div class="row padding-tb3">
       <div class="large-8 medium-8 small-11 columns small-centered">
 
-        <section>
+
+        <section class="padding-b4">
           <h3 class="margin-none-b">The Idea</h3>
           <p class="text-big margin-none-t">
             I originally created this as an internal app while at my last job. It has recently been rebuilt so anybody can take it for a spin.
@@ -35,13 +38,13 @@ custom_js:
             The idea came about when I realized it was often a bit of a distraction to glance at different marketing metrics throughout the day. Our team would be busy working and we'd have no idea how our efforts were doing that day. Once we had this setup on an iPad we mounted to a wall we would 'sense' when user acquisition efforts were effective or not. This told us when more analysis was necessary for that day.
           </p>
           <p>
-            You will get notified with every purchase, sign-up, or other goal. Every time someone visits that page the Gifalytics app will alert you with a sound and a random GIF. It's basically gives you real-time conversion tracking notifications. 
+            You will get notified with every purchase, sign-up, or other goal. Every time someone visits that page the Gifalytics app will alert you with a sound and a random GIF. It's basically gives you real-time conversion tracking notifications.
           </p>
         </section>
 
-        <section class="padding-tb1">
-          <h3 class="text-center">Branding</h3>
-          <p class="text-center padding-1">
+
+        <section class="padding-b4">
+          <p class="text-center padding-4 gifalytics-color-bg-gifalytics-orange">
             <img src="/assets/img/gifalytics-64.png">
           </p>
 
@@ -49,11 +52,8 @@ custom_js:
             <div class="small-6 margin-b1 columns">
               <div class="color-box-top gifalytics-color-bg-gifalytics-calm"></div>
             </div>
-            <div class="small-4 margin-b1 columns">
+            <div class="small-6 margin-b1 columns">
               <div class="color-box-top gifalytics-color-bg-gifalytics-blue"></div>
-            </div>
-            <div class="small-2 margin-b1 columns">
-              <div class="color-box-top gifalytics-color-bg-gifalytics-orange"></div>
             </div>
           </div>
           <p class="text-center padding-1 gifalytics-color-bg-gifalytics-calm rounded">
@@ -61,11 +61,68 @@ custom_js:
           </p>
         </section>
 
-        <section>
+
+        <!-- <section class="padding-b4">
           <h3 class="margin-none-b">Technical Details</h3>
           <p class="text-big margin-none-t">
-            This project was created with simple web technologies, HTML, CSS and Javascript. With the help of Parse I was able to add a back-end very easily. Additonaly the Giphy API was used to find random GIFs to display.
+            This project was created with simple web technologies, HTML, CSS and Javascript. With the help of Parse I was able to add a back-end very easily. Additionally the Giphy API was used to find random GIFs to display.
           </p>
+        </section> -->
+
+
+        <section>
+          <p class="text-bigger text-center">
+            Gifalytics has since been summited and featured to <a href="https://www.producthunt.com/tech/gifalytics">Product Hunt</a>. The feedback was overwhelmingly positive.
+          </p>
+
+            <div class="slider padding-t2">
+
+              <div class=" margin-lr05">
+                <blockquote>
+                  <p class="margin-none">
+                    <img class="display-inline margin-lr05 margin-none-l thumbnail" src="/assets/img/gifalytics-twitter1.png" />
+                    Launch Lister <span class="margin-lr05 text-small opacity-2">@launch_lister</span>
+                  </p>
+                  <p class="margin-none-b">
+                    Hey <a href="https://twitter.com/_tomki">@_tomki</a>, we just featured Gifalytics in the <a href="https://t.co/GkqjgtlhpJ">https://t.co/GkqjgtlhpJ</a> newsletter! <a href="https://t.co/17nRJ4jJ7E">pic.twitter.com/17nRJ4jJ7E</a>
+                  </p>
+                  <p class="margin-none text-small opacity-2">
+                    <a href="https://twitter.com/launch_lister/status/681872308646985728">11:20 AM - 29 Dec 2015</a>
+                  </p>
+                </blockquote>
+              </div>
+
+              <div class=" margin-lr05">
+                <blockquote>
+                  <p class="margin-none">
+                    <img class="display-inline margin-lr05 margin-none-l thumbnail" src="/assets/img/gifalytics-twitter2.jpg" />
+                    Gabriel Lewis <span class="margin-lr05 text-small opacity-2">@Gabriel__Lewis</span>
+                  </p>
+                  <p class="margin-none-b">
+                    <a href="https://twitter.com/Nivo0o0">@nivo0o0</a> your dream of combining gifs and analytics has finally come to fruition <a href="https://twitter.com/rrhoover">@rrhoover</a> <a href="https://twitter.com/ProductHunt">@ProductHunt</a> <a href="https://www.producthunt.com/tech/gifalytics">producthunt.com/tech/gifalytics</a>
+                  </p>
+                  <p class="margin-none text-small opacity-2">
+                    <a href="https://twitter.com/Gabriel__Lewis/status/681493005753253888">11:12 AM - 28 Dec 2015</a>
+                  </p>
+                </blockquote>
+              </div>
+
+              <div class=" margin-lr05">
+                <blockquote>
+                  <p class="margin-none">
+                    <img class="display-inline margin-lr05 margin-none-l thumbnail" src="/assets/img/gifalytics-twitter3.jpg" />
+                    Nick Coates <span class="margin-lr05 text-small opacity-2">@gadgick</span>
+                  </p>
+                  <p class="margin-none-b">
+                    My thoughts on Gifalytics on <a href="https://twitter.com/ProductHunt">@ProductHunt</a> cc <a href="https://twitter.com/_tomki">@_tomki</a> <a href="https://t.co/AUiP7jnM4L">https://t.co/AUiP7jnM4L</a> <a href="https://t.co/IlhHVeHYHo">pic.twitter.com/IlhHVeHYHo</a>
+                  </p>
+                  <p class="margin-none text-small opacity-2">
+                    <a href="https://twitter.com/gadgick/status/681403047055081474">4:15 AM - 28 Dec 2015</a>
+                  </p>
+                </blockquote>
+              </div>
+
+            </div>
         </section>
 
 
