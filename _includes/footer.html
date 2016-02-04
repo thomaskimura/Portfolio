@@ -40,23 +40,9 @@
     var headroom  = new Headroom(myElement);
     headroom.init();
 
-    // ALERT
-    setTimeout(function(){
-      $("#alert").css("display","block");
-      $("#alert").addClass("fade");
-    }, 1000);
-
-    // close alert
-    $( "#alert" ).click(function() {
-      $("#alert").css("display","none");
-    });
-
     // open nav
-    $( ".nav-open" ).click(function() {
-      $("#nav").addClass("nav-fullpage-visible");
-    });
-    $( ".nav-close" ).click(function() {
-      $("#nav").removeClass("nav-fullpage-visible");
+    $( ".nav-toggle" ).click(function() {
+      $("#nav").toggleClass("nav-fullpage-visible");
     });
   </script>
 
