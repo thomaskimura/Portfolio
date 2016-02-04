@@ -1,6 +1,16 @@
 ---
 layout: page
+title: Styleguide | Kimura Digital
+description: Styleguide for use with kimuradigital.com
+social-headline: Styleguide
+no-follow:
+permalink: /styleguide/
+thumbnail:
+outro: true
 dark-logo: true
+prettify:
+custom_css:
+custom_js:
 ---
 
 <!-- INTRO -->
@@ -13,7 +23,10 @@ dark-logo: true
     </div>
     <div class="large-8 columns">
       <p>
-        This styleguide is used to define elements and styles for the Atlas brand across their website.
+        This styleguide is used to define elements and styles for the Kimura Digital brand.
+      </p>
+      <p>
+        Grids and columns can be created using existing Foundation classes. Please refer to their <a href="http://foundation.zurb.com/sites/docs/" target="_blank">documentation</a> for examples and usage instructions.
       </p>
     </div>
   </div>
@@ -41,7 +54,53 @@ dark-logo: true
     </div>
     <div class="large-8 columns">
       <p>
-        main role="main" > article > section
+        Use the following elements to structure content.
+        <code class="label">main</code>,<code class="label">article</code>,<code class="label">section</code>
+      </p>
+      <p>
+        The <code class="label">main</code>. element should contain the main content for your web page. All of this content should be unique to the individual page, and should not appear elsewhere on the site.
+      </p>
+      <p>
+        The <code class="label">article</code> element should contain a piece of self-contained content that could be distributed outside the context of the page. This includes things like news articles, blog posts, or user comments.
+      </p>
+      <p>
+        The <code class="label">section</code> element should contain related content. Think of it like this... the article element is a news article, and the section is a section inside that article.
+      </p>
+    </div>
+  </div>
+  <hr class="opacity-4"/>
+  <!-- directory structure -->
+  <div class="row">
+    <div class="large-4 columns">
+      <h3>Directory Structure</h3>
+    </div>
+    <div class="large-8 columns">
+      <p>
+        <a href="http://sass-lang.com/" target="_blank">Sass</a> is used for this project to create modular code that is sustainable and reusable. The Sass follows <a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">Atomic Design</a> principles. The directory structure is designed around this concept.
+      </p>
+      <p>
+        Inside the Sass folder you will find <code class="label">style.scss</code>. This file is responsible for importing all the necessary styles. Open up this file and recompile the compressed css if you find some components are not necessary.
+      </p>
+      <p>
+        The <code class="label">variables</code> folder contains variables to setup the project. All files are prefixed with <code>v-</code>.
+      </p>
+      <p>
+        The <code class="label">framework</code> folder contains outside code that has be repurposed for this project. These include css frameworks, font libraries and other css plugins.
+      </p>
+      <p>
+        The <code class="label">mixins</code> folder contains mixins that are used throughout the Sass folder. All files are prefixed with <code>mx-</code>.
+      </p>
+      <p>
+        The <code class="label">general</code> folder contains styles that are applied directly to bare html elements.
+      </p>
+      <p>
+        The <code class="label">classes</code> folder contains classes used to modify and style elements by adding classes. All files are prefixed with <code>c-</code>.
+      </p>
+      <p>
+        The <code class="label">atoms</code> folder contains styles used to create single elements such as buttons. All files are prefixed with <code>a-</code>.
+      </p>
+      <p>
+        The <code class="label">molecules</code> folder contains styles used to create components with multiple elements such as a sidebar navigation. All files are prefixed with <code>ml-</code>.
       </p>
     </div>
   </div>
@@ -449,7 +508,7 @@ dark-logo: true
       <h3>Lists</h3>
       <p>
         By default lists can be numbered or simply plain bullet points. Use
-        <code class="label">ui</code> for an unordered list and <code class="label">ol</code> for a ordered list. A class of <code>list-none</code> can be added to remove any bullet points.
+        <code class="label">ui</code> for an unordered list and <code class="label">ol</code> for a ordered list. A class of <code class="label">list-none</code> can be added to remove any bullet points.
       </p>
     </div>
     <div class="large-8 columns">
@@ -1129,7 +1188,7 @@ dark-logo: true
     <div class="large-4 columns">
       <h3>Overflow</h3>
       <p>
-        Use <code class="label">.overflow-hiddene</code> or <code class="label">.overflow-ellipsis</code> to change the overflow of an element.
+        Use <code class="label">.overflow-hidden</code> or <code class="label">.overflow-ellipsis</code> to change the overflow of an element.
       </p>
     </div>
     <div class="large-8 columns">
