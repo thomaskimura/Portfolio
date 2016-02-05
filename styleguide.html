@@ -12,63 +12,32 @@ prettify:
 custom_css:
 custom_js:
 ---
-
 <!-- INTRO -->
 <!-- ............................ -->
 <section>
+
   <!-- intro -->
   <div class="row">
     <div class="large-4 columns">
-      <h3>Intro</h3>
+      <h3>Gettings Started</h3>
     </div>
     <div class="large-8 columns">
-      <p>
-        This styleguide is used to define elements and styles for the Kimura Digital brand.
+      <p class="text-big">
+        This styleguide is used to define elements and styles for the ____ brand.
       </p>
       <p>
         Grids and columns can be created using existing Foundation classes. Please refer to their <a href="http://foundation.zurb.com/sites/docs/" target="_blank">documentation</a> for examples and usage instructions.
       </p>
-    </div>
-  </div>
-  <hr class="opacity-4"/>
-  <!-- contents -->
-  <div class="row">
-    <div class="large-4 columns">
-      <h3>Contents</h3>
-    </div>
-    <div class="large-8 columns">
-      <ul>
-        <li>Branding</li>
-        <li>Basic Text Elements</li>
-        <li>Basic Form Elements</li>
-        <li>Additional Text Classes</li>
-        <li>Utility Classes</li>
-      </ul>
-    </div>
-  </div>
-  <hr class="opacity-4"/>
-  <!-- structure -->
-  <div class="row">
-    <div class="large-4 columns">
-      <h3>Content Structure</h3>
-    </div>
-    <div class="large-8 columns">
       <p>
-        Use the following elements to structure content.
-        <code class="label">main</code>,<code class="label">article</code>,<code class="label">section</code>
+        <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> is used to reuse duplicated HTML. Use <code class="label">jekyll serve</code> to generate outputted site to the <code class="label">_site</code> directory.
       </p>
       <p>
-        The <code class="label">main</code>. element should contain the main content for your web page. All of this content should be unique to the individual page, and should not appear elsewhere on the site.
-      </p>
-      <p>
-        The <code class="label">article</code> element should contain a piece of self-contained content that could be distributed outside the context of the page. This includes things like news articles, blog posts, or user comments.
-      </p>
-      <p>
-        The <code class="label">section</code> element should contain related content. Think of it like this... the article element is a news article, and the section is a section inside that article.
+        To compile Sass, <code class="label">cd</code> to the <code class="label">assets</code> directory then use <code class="label">gulp watch</code>.
       </p>
     </div>
   </div>
   <hr class="opacity-4"/>
+
   <!-- directory structure -->
   <div class="row">
     <div class="large-4 columns">
@@ -105,6 +74,46 @@ custom_js:
     </div>
   </div>
   <hr class="opacity-4"/>
+
+  <!-- optimizations -->
+  <div class="row">
+    <div class="large-4 columns">
+      <h3>Optimizations</h3>
+    </div>
+    <div class="large-8 columns">
+      <p>
+        In order to optimize the final outputted css all unused code should be commented out in the <code class="label">style.scss</code> file.
+      </p>
+      <p>
+        Icon libraries that are used can significantly increase the final file size. It is important to only include the specific icons used.
+      </p>
+    </div>
+  </div>
+  <hr class="opacity-4"/>
+
+  <!-- structure -->
+  <div class="row">
+    <div class="large-4 columns">
+      <h3>Content Structure</h3>
+    </div>
+    <div class="large-8 columns">
+      <p>
+        Use the following elements to structure content.
+        <code class="label">main</code>,<code class="label">article</code>,<code class="label">section</code>
+      </p>
+      <p>
+        The <code class="label">main</code>. element should contain the main content for your web page. All of this content should be unique to the individual page, and should not appear elsewhere on the site.
+      </p>
+      <p>
+        The <code class="label">article</code> element should contain a piece of self-contained content that could be distributed outside the context of the page. This includes things like news articles, blog posts, or user comments.
+      </p>
+      <p>
+        The <code class="label">section</code> element should contain related content. Think of it like this... the article element is a news article, and the section is a section inside that article.
+      </p>
+    </div>
+  </div>
+  <hr class="opacity-4"/>
+
 </section>
 
 <!-- BRANDING -->
@@ -121,9 +130,7 @@ custom_js:
     </div>
     <div class="large-8 columns">
       <h4>Logomark</h4>
-      <div class="mark-hover"></div>
       <h4>Logotype</h4>
-      <div class="logo-hover"></div>
     </div>
   </div>
   <hr class="opacity-4"/>
@@ -132,7 +139,7 @@ custom_js:
   <div class="row">
     <div class="large-4 columns">
       <h3>Colors</h3>
-      <p>Background colors can be used on any element using <code class="label">.color-bg-<i>color</i></code>.
+      <p>Background colors can be used on any element using <code class="label">.color-bg-<i>[color]</i></code>. The class <code class="label">.color-bg-none</code> can be used to remove background colors.
     </div>
     <div class="large-8 columns">
       <h4>Primary Colors</h4>
@@ -536,7 +543,7 @@ custom_js:
     <div class="large-4 columns">
       <h3>Tables</h3>
       <p>
-        Use tables to display data
+        Use tables to display data. Tables can be styled in a number of ways, use this example as a starting point.
       </p>
     </div>
     <div class="large-8 columns">
@@ -652,7 +659,7 @@ custom_js:
     <div class="large-4 columns">
       <h3>Sample Form</h3>
       <p>
-        The form to the side includes all the basic elements of a form.
+        The form to the side includes all the basic elements of a form. Use <code class="label">.input-alert</code> to highlight fields that need the users attention.
       </p>
     </div>
     <div class="large-8 columns">
@@ -685,7 +692,7 @@ custom_js:
             <div class="small-6 columns">
               <label>
                 Date?
-                <input type="date" class="full date">
+                <input type="date" class="full date input-alert">
               </label>
             </div>
           </div>
@@ -789,13 +796,13 @@ custom_js:
   </div>
   <hr class="opacity-4"/>
 
-  <!-- input -->
+  <!-- mask -->
   <div class="row">
     <div class="large-4 columns">
       <h3>Masking Form Inputs</h3>
       <p>
-        Input elements can include a masks to guide users in the right direction. The jQuery Mask Plugin is used for this.
-        <code class="text-small">
+        Input elements can include a masks to guide users in the right direction. The jQuery Mask Plugin is used for this. JQuery and the <code>jquery.mask.min.js</code> files are required.<br/>
+        <code class="text-smaller">
           $( document ).ready(function() {
             $('.mask-date').mask('00/00/0000');
             $('.mask-phonenumber').mask('(000) 000-0000');
@@ -840,7 +847,7 @@ custom_js:
     <div class="large-4 columns">
       <h3>Alignment</h3>
       <p>
-        By default text is aligned to the left. Use <code class="label">.text-<i>direction</i></code> to change this on any element.
+        By default text is aligned to the left. Use <code class="label">.text-<i>[direction]</i></code> to change this on any element.
       </p>
     </div>
     <div class="large-8 columns">
@@ -866,7 +873,7 @@ custom_js:
   <div class="row">
     <div class="large-4 columns">
       <h3>Sizing</h3>
-      <p>Additonal classes can be used to resize paragraphs and other elements. Use <code class="label">.text-<i>size</i></code> to change this on any element.
+      <p>Additonal classes can be used to resize paragraphs and other elements. Use <code class="label">.text-<i>[size]</i></code> to change this on any element.
     </div>
     <div class="large-8 columns">
       <code class="label">.text-smallest</code><br/>
@@ -902,13 +909,12 @@ custom_js:
   </div>
   <hr class="opacity-4"/>
 
-
   <!-- text color -->
   <div class="row">
     <div class="large-4 columns">
       <h3>Text Color</h3>
       <p>
-        Change color of text using the following classes. Use <code class="label">.text-<i>color</i></code> to change text color on any element.
+        Change color of text using the following classes. Use <code class="label">.text-<i>[color]</i></code> to change text color on any element. Addtionally <code class="label">.text-invert</code> can be added to any dark container to invert all the child text elements.
       </p>
     </div>
     <div class="large-8 columns">
@@ -937,7 +943,7 @@ custom_js:
     <div class="large-4 columns">
       <h3>Letter Spacing</h3>
       <p>
-        Use these classes to add letter spacing to text. Use <code class="label">.text-letterspacing-<i>index</i></code> to change this on any element.
+        Use these classes to add letter spacing to text. Use <code class="label">.text-letterspacing-<i>[x]</i></code> to change this on any element.
       </p>
     </div>
     <div class="large-8 columns">
@@ -959,7 +965,7 @@ custom_js:
     <div class="large-4 columns">
       <h3>Text Weight</h3>
       <p>
-        Use these classes to change the text weight. Use <code class="label">.text-weight-<i>index</i></code> to change this on any element.
+        Use these classes to change the text weight. Use <code class="label">.text-weight-<i>[xxx]</i></code> to change this on any element.
       </p>
     </div>
     <div class="large-8 columns">
@@ -1109,8 +1115,32 @@ custom_js:
   <!-- opacity -->
   <div class="row">
     <div class="large-4 columns">
+      <h3>Borders</h3>
+      <p>
+        Use these classes to apply borders to any element. Addtionally <code class="label">.border-color-[color]</code> can be used to change the border color to any color in the pallete. The class <code class="label">.border-none</code> can be used to remove borders.
+      </p>
+    </div>
+    <div class="large-8 columns">
+      <p>
+        Borders can be applied using the following classes:<br/>
+        <span class="border-solid">.border-solid</span> <br/>
+        <span class="border-dashed">.border-dashed</span> <br/>
+        <span class="border-dotted">.border-dotted</span> <br/>
+        <span class="border-solid-top">.border-solid-top</span> <br/>
+        <span class="border-solid-right">.border-solid-right</span> <br/>
+        <span class="border-solid-bottom">.border-solid-bottom</span> <br/>
+        <span class="border-solid-left">.border-solid-left</span> <br/>
+        <span class="border-solid border-color-alert">.border-solid .border-color-alert</span> <br/>
+      </p>
+    </div>
+  </div>
+  <hr class="opacity-4"/>
+
+  <!-- opacity -->
+  <div class="row">
+    <div class="large-4 columns">
       <h3>Opacity</h3>
-      <p>Use opacity classes from <code class="label">.opacity-0</code> to <code class="label">.opacity-4</code> to adjust transparency.</p>
+      <p>Use opacity classes from <code class="label">.opacity-0</code> to <code class="label">.opacity-4</code> to adjust transparency. Additionaly <code class="label">.opacity-full</code> can be used to set a opacity level of 100%.</p>
     </div>
     <div class="large-8 columns">
       <p>
@@ -1120,6 +1150,7 @@ custom_js:
         <span class="opacity-2">.opacity-2</span>
         <span class="opacity-3">.opacity-3</span>
         <span class="opacity-4">.opacity-4</span>
+        <span class="opacity-full">.opacity-full</span>
       </p>
     </div>
   </div>
@@ -1129,7 +1160,6 @@ custom_js:
   <div class="row">
     <div class="large-4 columns">
       <h3>Center</h3>
-      <code class="label">.center-block</code><br/>
       <p>Use <code class="label">.center-block</code> to center block elements with definded widths.</p>
     </div>
     <div class="large-8 columns">
@@ -1251,8 +1281,8 @@ custom_js:
   <div class="row">
     <div class="large-4 columns">
       <h3>Rounded Corners</h3>
-      <code class="label">.rounded</code>
-      <p>It's easy to apply rounded corners to anything. Use <code class="label">.circular</code> on square shapes to create circles.</p>
+
+      <p>It's easy to apply rounded corners to anything by using <code class="label">.rounded</code>. Use <code class="label">.circular</code> on square shapes to create circles. Rounded corners can be removed by using <code class="label">.unround</code></p>
     </div>
     <div class="large-8 columns">
       <p class="padding-1 color-bg-calm text-center rounded">.rounded</p>
