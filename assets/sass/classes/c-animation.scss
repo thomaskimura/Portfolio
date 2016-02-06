@@ -1,0 +1,44 @@
+//================================================//
+// ANIMATION
+// these classes can be toggled on and off to
+// create animations
+// keyframes defined in mx-animation.scss class
+//================================================//
+
+
+//================================================//
+// GENEARL CLASS
+.animation {
+  @include animation;
+}
+
+
+//================================================//
+// KEYFRAME CLASSES
+.pulse {
+  @include pulse;
+}
+.slide-up {
+  @include slide-up;
+}
+.slide-left {
+  @include slide-left;
+}
+.slide-right {
+  @include slide-right;
+}
+.toss-left {
+  @include toss-left;
+}
+.toss-right {
+  @include toss-right;
+}
+
+//================================================//
+// TRANSTITION CLASSES
+.fade {
+  @include fade;
+}
+.fade-out {
+  @include fade-out;
+}

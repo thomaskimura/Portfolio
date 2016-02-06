@@ -1,6 +1,5 @@
 assets/node_modules
 _site
-*.scss
 *.scssc
 *.map
 npm-debug.log
