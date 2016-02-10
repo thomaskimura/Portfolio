@@ -20,7 +20,8 @@
   animation-iteration-count: infinite;
 }
 @mixin slide-up {
-  animation: slide-up 1s;
+  animation: slide-up 1s forwards;
+  animation-fill-mode: forwards;
 }
 @mixin slide-left {
   animation: slide-left 1s;
@@ -67,7 +68,7 @@
   }
  100% {
    transform: translateY(0%);
-   opacity: 1;
+   opacity: 1 !important;
  }
 }
 
