@@ -34,14 +34,19 @@ nav.headroom {
   transform: translateY(-100%);
   transition-property: transform;
   transition-duration: 0.4s;
-  overflow: scroll;
+  transition-timing-function: cubic-bezier(.8,.43,0,.48);
   z-index: 100;
-  // opacity:0;
-  // z-index: -10;
+  overflow-x: hidden;
 }
 
 .nav-fullpage-visible {
   z-index: 100;
   opacity:1;
   transform: translateY(0);
+}
+
+.logo-topbar {
+  height: 1em;
+  display: inline;
+  vertical-align: middle;
 }

@@ -5,34 +5,6 @@
 
 
 //================================================//
-// NAVIGATION
-.nav-fullpage {
-  position: fixed;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transform: translateY(-100%);
-  transition-property: transform;
-  transition-duration: 0.4s;
-  transition-timing-function: cubic-bezier(.8,.43,0,.48);
-  z-index: 100;
-  overflow-x: hidden;
-}
-
-.nav-fullpage-visible {
-  z-index: 100;
-  opacity:1;
-  transform: translateY(0);
-}
-
-.logo-topbar {
-  height: 1em;
-  display: inline;
-  vertical-align: middle;
-}
-
-
-//================================================//
 // TIMELINE
 .timeline {
   position: relative;
@@ -62,4 +34,9 @@
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
+}
+
+
+.inline-size {
+  height: 2em;
 }

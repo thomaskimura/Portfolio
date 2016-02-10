@@ -1,2 +1,0 @@
-exclude: ['assets/sass', 'assets/node_modules', 'assets/gulpfile.js', 'package.json']
-permalink: :categories/:title/

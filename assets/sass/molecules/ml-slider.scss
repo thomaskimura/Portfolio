@@ -4,21 +4,11 @@
 // (http://kenwheeler.github.io/slick/)
 //================================================//
 
-.full-slider {
-  margin: 0;
-}
-.slider blockquote {
-  @include margin-none;
-  @include padding-1;
-  border-radius: $size-radius;
-  border: none;
-}
+
 .slick-slide {
   @include opacity-4;
   outline: none;
   transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
 }
 .slick-center, .slick-current{
   opacity: 1;
@@ -26,7 +16,7 @@
 .slick-dots li button {
   height: 5px;
   width: 5px;
-  background: $light-300;
+  background: $calm;
   border-radius: 100%;
 }
 .slick-active button {
@@ -39,7 +29,6 @@
   content: "";
   display: none;
 }
-
 .inside-dots .slick-dots {
   bottom: -5px;
 }

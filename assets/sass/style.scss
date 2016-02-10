@@ -28,8 +28,8 @@
 @import "framework/font-awesome/font-awesome.scss";
 @import "framework/foundation/foundation.scss";
 // @import "framework/twemoji/twemoji-awesome.scss";
-// @import "framework/slick/slick.scss";
-// @import "framework/slick/slick-theme.scss";
+@import "framework/slick/slick.scss";
+@import "framework/slick/slick-theme.scss";
 
 
 //================================================//
@@ -51,9 +51,9 @@
 // general scss styles to be used
 // across all code
 @import "general/type.scss";
-@import "general/print.scss";
 @import "general/forms.scss";
-@import "general/tables.scss";
+// @import "general/print.scss";
+// @import "general/tables.scss";
 
 
 //================================================//
@@ -75,8 +75,8 @@
 // singular html elements
 @import "atoms/a-button.scss";
 @import "atoms/a-label.scss";
-@import "atoms/a-tooltip.scss";
-@import "atoms/a-highlight.scss";
+// @import "atoms/a-tooltip.scss";
+// @import "atoms/a-highlight.scss";
 
 
 //================================================//
@@ -84,8 +84,8 @@
 // a group of atoms to form
 // a common element used
 @import "molecules/ml-headroom.scss";
-@import "molecules/ml-styleguide.scss";
-// @import "molecules/ml-slider.scss";
+@import "molecules/ml-slider.scss";
+// @import "molecules/ml-styleguide.scss";
 // @import "molecules/ml-chat.scss";
 
 
