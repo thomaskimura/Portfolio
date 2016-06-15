@@ -31,9 +31,11 @@
 }
 @mixin toss-left {
   animation: toss-left 1s;
+  animation-fill-mode: forwards;
 }
 @mixin toss-right {
   animation: toss-right 1s;
+  animation-fill-mode: forwards;
 }
 
 //================================================//
