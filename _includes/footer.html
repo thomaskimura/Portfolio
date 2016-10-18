@@ -3,25 +3,8 @@
 
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/assets/js/headroom.min.js"></script>
-
-
-  <script>
-  $( document ).ready(function() {
-    // header
-    var myElement = document.querySelector(".headroom");
-    var headroom  = new Headroom(myElement);
-    headroom.init();
-
-    // open nav
-    $( ".nav-toggle" ).click(function() {
-      $("#nav").toggleClass("nav-fullpage-visible");
-    });
-
-    // animate into page
-    $("#slide-up").removeClass("opacity-0");
-    $("#slide-up").addClass("slide-up");
-  });
-  </script>
+  <script src="/assets/js/baffle.min.js"></script>
+  <script src="/assets/js/script.js"></script>
 
 
   {% if page.scroll-animation %}
