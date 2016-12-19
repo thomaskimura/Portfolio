@@ -18,6 +18,9 @@
 .pulse {
   @include pulse;
 }
+.expand {
+  @include expand;
+}
 .slide-up {
   @include slide-up;
 }

@@ -47,3 +47,15 @@
     max-height: 140px;
   }
 }
+
+
+.hover-blur:hover > section {
+  opacity: 0.6;
+}
+.hover-unblur:hover {
+  opacity: 1 !important;
+}
+
+.fa {
+  vertical-align: middle;
+}
