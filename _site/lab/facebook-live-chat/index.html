@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <!-- title -->
+    <title>
+      
+        Live Chat with Facebook Messenger | Kimura Digital
+      
+    </title>
+
+    <!-- description -->
+    <meta name="description" content="
+    
+      A demo using the Facebook page plugin as a live chat messenger.
+    
+    " />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="
+    
+      Simple and free live chat alternative using Facebook pages plugin
+    ">
+    <meta itemprop="description" content="
+    
+      A demo using the Facebook page plugin as a live chat messenger.
+    ">
+    <meta itemprop="image" content="
+    
+      http://kimuradigital.com/assets/img/thumbnails/thumbnail-facebook-kimura.png
+    ">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Twitter">
+    <meta name="twitter:title" content="
+    
+      Simple and free live chat alternative using Facebook pages plugin
+    ">
+    <meta name="twitter:description" content="
+    
+      A demo using the Facebook page plugin as a live chat messenger.
+    ">
+    <meta name="twitter:creator" content="@HeySense">
+    <meta name="twitter:image:src" content="
+    
+      http://kimuradigital.com/assets/img/thumbnails/thumbnail-facebook-kimura.png
+    ">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="
+    
+      Simple and free live chat alternative using Facebook pages plugin
+    ">
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="
+    
+      http://kimuradigital.com/assets/img/thumbnails/thumbnail-facebook-kimura.png
+    "/>
+    <meta property="og:description" content="
+    
+      A demo using the Facebook page plugin as a live chat messenger.
+    " />
+
+
+    <!-- UPDATE FAVICON ETC -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/assets/img/favicon/manifest.json">
+    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#af3535">
+    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/assets/img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- stylesheets -->
+    <link href="/assets/css/style.min.css" rel="stylesheet">
+    
+
+
+    
+
+    <script>
+      // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      //
+      // ga('create', 'UA-70484460-1', 'auto');
+      // ga('send', 'pageview');
+    </script>
+
+  </head>
+
+<body class="color-bg-white">
+
+  <!-- sliding header -->
+  <nav class="headroom color-bg-white border-solid-bottom border-color-calm" >
+    <div class="row">
+      <div class="large-10 medium-10 small-11 columns small-centered">
+        <div class="row">
+
+          <div class="small-2 columns">
+            <p>
+              
+                <a href="/"><img class="logo-topbar" src="/assets/img/logo64_dark.png"></a>
+              
+            </p>
+          </div>
+
+          <div class="small-10 columns">
+            <p class="text-right">
+              
+                <a href="/work" class="margin-lr05 tablet-up text-dark text-decoration-none">Work</a>
+              
+              
+                <a href="/services" class="margin-lr05 tablet-up text-dark text-decoration-none">Services</a>
+              
+              <!-- <a href="/blog" class="text-light opacity-2 margin-lr05 tablet-up">Blog</a> -->
+              <i class="fa fa-bars nav-toggle cursor-pointer"></i>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- full menu -->
+  <nav class="nav-fullpage color-bg-cream" id="nav">
+
+    <!-- top bar -->
+    <section>
+      <div class="position-fixed full zindex-1000">
+        <div class="row">
+          <div class="large-10 medium-10 small-11 columns small-centered">
+            <div class="row">
+
+              <div class="small-6 columns">
+                <p>
+                  
+                    <a href="/"><img class="logo-topbar" src="/assets/img/logo64_dark.png"></a>
+                  
+                </p>
+              </div>
+
+              <div class="small-6 columns">
+                <p class="text-right"><i class="fa fa-bars nav-toggle cursor-pointer"></i></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- extra spacing -->
+    <p>
+      <br>
+    </p>
+
+    <!-- menu -->
+    <section>
+      <div class="row">
+        <div class="large-10 medium-10 small-11 columns small-centered">
+
+          <ul class="margin-b2 padding-none list-none">
+            <a class="text-dark" href="/work">
+            <li class="padding-1 text-big text-center hover-color-tint-dark-1 cursor-pointer"
+              >Work
+            </li>
+            </a>
+            <hr class="opacity-4">
+            <a class="text-dark" href="/services">
+            <li class="padding-1 text-big text-center hover-color-tint-dark-1 cursor-pointer"
+              >Services
+            </li>
+            </a>
+            <hr class="opacity-4">
+            <a class="text-dark" href="/lab">
+            <li class="padding-1 text-big text-center hover-color-tint-dark-1 cursor-pointer"
+              >Lab
+            </li>
+            </a>
+            <hr class="opacity-4">
+          </ul>
+
+          <p class="margin-b1 text-small text-center">
+            <a href="/"><img class="padding-b05" src="/assets/img/logotype_dark.png"></a>
+          </p>
+
+          <p class="text-center text-smaller opacity-3">
+            <a href="/terms">Terms & Conditions</a> </br> Copyright © <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Kimura Digital. All rights reserved.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+  </nav>
+
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=589123551142059";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<style>
+.chat-container {
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  background: white;
+  opacity: 0;
+  z-index: -100;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.94, 0.19, 0.49, 0.94);
+  overflow-y: scroll;
+}
+@media (min-width: 500px) {
+  .chat-container {
+    width: 400px;
+    border-left: solid #e5e3e3 2px;
+  }
+}
+
+.chat-header {
+  width: 100%;
+  height: 70px;
+  background: white;
+  font-size: 18px !important;
+}
+
+.chat-bubble {
+  bottom: 16px;
+  right: 16px;
+}
+
+.chat-preview {
+  position: fixed;
+  bottom: 100px;
+  right: 16px;
+  max-width: 200px;
+  word-wrap: break-word;
+  opacity: 0;
+  z-index: -100;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0.94, 0.19, 0.49, 0.94);
+}
+
+.chat-preview:after {
+  position: absolute;
+  bottom: -10px;
+  right: 10%;
+  margin-left: -10px;
+  width: 0;
+  font-size: 0;
+  border-top: 10px solid #e5e3e3;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  content: " ";
+  line-height: 0;
+}
+
+.chat-container-visible, .chat-preivew-visible {
+  z-index: 10;
+  opacity: 1;
+}
+</style>
+
+
+<!-- header -->
+<!-- <header>
+  <div class="row padding-t4 padding-b6">
+    <div class="large-8 medium-10 small-12 columns small-centered">
+
+      <section>
+        <div class="padding-1 text-center opacity-0" id="slide-up">
+          <h1 class="margin-none-b">
+            Live Chat With Facebook's Page Plugins
+          </h1>
+          <p class="margin-none-t text-bigger opacity-1">Simple and free live chat alternative using Facebook pages plugin. Click the chat icon to demo it!</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</header> -->
+
+
+<!-- chat preivew -->
+<div class="chat-preview chat-toggle position-fixed padding-05 desktop-only color-bg-cream border-solid border-color-calm round cursor-pointer text-small">
+  <img src="http://placehold.it/32x32" class="float-right circular">
+</div>
+
+<!-- chat bubble -->
+<div class="chat-bubble chat-toggle position-fixed color-bg-primary zindex-10 circular cursor-pointer">
+  <i class="fa fa-comments padding-05 text-invert text-bigger"></i>
+</div>
+
+<!-- chat window -->
+<div class="chat-container position-fixed">
+  <div class="chat-header position-absolute padding-1 zindex-10 border-solid-bottom border-color-calm">
+    <div class="row">
+      <div class="small-6 columns">
+        Let's Chat
+      </div>
+      <div class="small-6 columns text-right">
+        <i class="fa fa-times chat-toggle cursor-pointer"></i>
+      </div>
+    </div>
+  </div>
+
+  <center>
+    <div class="fb-page"
+      data-tabs="messages"
+      data-href="https://www.facebook.com/facebook"
+      data-hide-cover="true"
+      data-small-header="true"
+      data-adapt-container-width="true"
+      data-width="500"
+      data-height="300"
+      data-show-facepile="false">
+    </div>
+  </center>
+</div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="/assets/js/headroom.min.js"></script>
+  <script src="/assets/js/baffle.min.js"></script>
+  <script src="/assets/js/script.js"></script>
+
+
+  
+
+
+  
+
+
+  
+    
+    <script src="/assets/js/lab/facebook-chat.js"></script>
+    
+  
+
+
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "legalName" : "Kimura Digital",
+  "url" : "http://kimuradigital.com/",
+  "contactPoint" : [{
+    "@type" : "ContactPoint",
+    "telephone" : "+1-416-275-6541",
+    "contactType" : "sales"
+  }],
+  "logo" : "http://kimuradigital.com/siteicon.png",
+  "sameAs" : [
+    "http://www.twitter.com/_tomki"]
+}
+</script>
+
+</body>
+</html>
+
