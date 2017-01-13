@@ -1,0 +1,52 @@
+//================================================//
+// HEADROOM
+// classess avaliable to create animated top bar
+// animations using headroom.js
+//================================================//
+
+
+nav.headroom {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  z-index: 10;
+  transition: transform 200ms linear;
+}
+
+.headroom--unpinned {
+  display: initial !important;
+  transform: translateY(-100%);
+}
+
+.headroom--pinned {
+  display: initial !important;
+  transform: translateY(0%);
+}
+
+//================================================//
+// NAVIGATION
+.nav-fullpage {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-100%);
+  transition-property: transform;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(.8,.43,0,.48);
+  z-index: 100;
+  overflow-x: hidden;
+}
+
+.nav-fullpage-visible {
+  z-index: 100;
+  opacity:1;
+  transform: translateY(0);
+}
+
+.logo-topbar {
+  height: 1em;
+  display: inline;
+  vertical-align: middle;
+}

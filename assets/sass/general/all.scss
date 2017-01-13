@@ -1,0 +1,61 @@
+//================================================//
+// TEMPORARY
+// code in here should be split into molecules
+//================================================//
+
+
+//================================================//
+// TIMELINE
+.timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: $light;
+  @media only screen and (min-width: 640px) {
+    left: 50%;
+    margin-left: -2px;
+  }
+}
+
+
+//================================================//
+// INDICATOR
+.indicator {
+  height: .5em;
+  width: 0.5em;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.inline-size {
+  height: 2em;
+}
+
+
+.img-grid {
+  img {
+    max-height: 140px;
+  }
+}
+
+
+.hover-blur:hover > section {
+  opacity: 0.6;
+}
+.hover-unblur:hover {
+  opacity: 1 !important;
+}
+
+.fa {
+  vertical-align: middle;
+}

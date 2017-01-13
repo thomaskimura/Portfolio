@@ -1,74 +1,10 @@
 
-<!-- footer -->
-<footer class="color-bg-white padding-tb2 padding-t4">
-
-  <div class="row margin-b1">
-    <div class="large-8 medium-8 small-11 columns small-centered text-center">
-      <img class="opacity-4" src="/assets/img/border.png"></br>
-      <a href="/"><img src="/assets/img/logotype_dark.png"></a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="large-8 medium-8 small-11 columns small-centered">
-      <!-- <nav class="text-center">
-        <a class="text-lightest nav-link" href="/about">About</a>
-        <a class="text-lightest nav-link" href="/services">Services</a>
-        <a class="text-lightest nav-link" href="/work">Work</a>
-        <a class="text-lightest nav-link" href="/blog">Blog</a>
-      </nav> -->
-
-      <div class="row margin-t1 text-small">
-        <div class="medium-offset-2 large-4 medium-4 small-12 columns">
-          <p class="margin-none margin-b05 opacity-2 text-center-small"><a class="" href="mailto:thomas@kimuradigital.com">thomas@kimuradigital.com</a><br/>+1 416 275-6541</p>
-        </div>
-        <div class="large-4 medium-4 small-12 columns end">
-          <p class="margin-none margin-b05 opacity-2 text-center-small"><i>Front-end developer & designer of all things digital.</i></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</footer>
-
-<!-- outro -->
-{% if page.outro %}
-  {% include outro.html %}
-{% endif %}
-
-
-</body>
 
 
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="/assets/js/headroom.min.js"></script>
-
-
-  <script>
-    // HEADROOM
-    var myElement = document.querySelector(".headroom");
-    var headroom  = new Headroom(myElement);
-    headroom.init();
-
-    // ALERT
-    setTimeout(function(){
-      $("#alert").css("display","block");
-      $("#alert").addClass("fade");
-    }, 1000);
-
-    // close alert
-    $( "#alert" ).click(function() {
-      $("#alert").css("display","none");
-    });
-
-    // open nav
-    $( ".nav-open" ).click(function() {
-      $("#nav").addClass("nav-fullpage-visible");
-    });
-    $( ".nav-close" ).click(function() {
-      $("#nav").removeClass("nav-fullpage-visible");
-    });
-  </script>
+  <script src="/assets/js/baffle.min.js"></script>
+  <script src="/assets/js/script.js"></script>
 
 
   {% if page.scroll-animation %}
@@ -80,7 +16,7 @@
 
         var topOfWindow = $(window).scrollTop();
           if (imagePos < topOfWindow+400) {
-            $(this).addClass("tossleft");
+            $(this).addClass("toss-left");
           }
         });
 
@@ -89,7 +25,7 @@
 
         var topOfWindow = $(window).scrollTop();
           if (imagePos < topOfWindow+400) {
-            $(this).addClass("tossright");
+            $(this).addClass("toss-right");
           }
         });
 
@@ -110,12 +46,22 @@
     {% endfor %}
   {% endif %}
 
-  <!-- <script src="/assets/js/baseliner.js"></script>
-  <script>
-  window.onload = function() {
-      baseliner = new Baseliner(8);
-  }
-  </script> -->
+
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "legalName" : "Kimura Digital",
+  "url" : "http://kimuradigital.com/",
+  "contactPoint" : [{
+    "@type" : "ContactPoint",
+    "telephone" : "+1-416-275-6541",
+    "contactType" : "sales"
+  }],
+  "logo" : "http://kimuradigital.com/siteicon.png",
+  "sameAs" : [
+    "http://www.twitter.com/_tomki"]
+}
+</script>
 
 </body>
 </html>

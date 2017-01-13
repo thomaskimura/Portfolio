@@ -1,0 +1,128 @@
+//================================================//
+// ANIMATED CHAT BUBBLES
+// classess avaliable to create animated chat
+// text.
+//================================================//
+
+
+.chat-container {
+  @include padding-lr2;
+  width: 100%;
+  background: $primary-400;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 500px;
+}
+.chat-inner {
+  display: inline-block;
+  width: 100%;
+}
+.chat {
+  @include margin-tb05;
+  border-radius: 20px;
+  padding: 0.5em 0.8em 0.5em 0.8em;
+  max-width: 80%;
+  span {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .blink-right {
+    background-color: white;
+  }
+  .blink-left {
+    background-color: white;
+  }
+  #typing-indicator-one {
+    animation-name: blink;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  #typing-indicator-two {
+    animation-name: blink;
+    animation-duration: 1.5s;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  #typing-indicator-three {
+    animation-name: blink;
+    animation-duration: 1.5s;
+    animation-delay: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes blink {
+      0% {
+        opacity: 0.1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 0.1;
+      }
+  }
+}
+
+.chat-left {
+	position:relative;
+	padding:0.5em 1em 0.5em 1em;
+	background:$primary-500;
+  color: rgba(234, 241, 244, 0.8);
+  float: left;
+	&:before {
+		content:"";
+		position:absolute;
+		bottom:-2px;
+		left:-7px;
+		height:20px;
+		border-left:20px solid $primary-500;
+		border-bottom-right-radius: 16px 14px;
+		-webkit-transform:translate(0, -2px);
+	}
+	&:after {
+		content:"";
+		position:absolute;
+		bottom:-2px;
+		left:4px;
+		width:26px;
+		height:20px;
+		background:$primary-400;
+		border-bottom-right-radius: 10px;
+		-webkit-transform:translate(-30px, -2px);
+	}
+}
+
+.chat-right {
+  text-align: right;
+	position:relative;
+	padding:0.5em 1em 0.5em 1em;
+	background:$primary-300;
+  color: $color-light;
+	float: right;
+	&:before {
+		content:"";
+		position:absolute;
+		bottom:-2px;
+		right:-7px;
+		height:20px;
+		border-right:20px solid $primary-300;
+		border-bottom-left-radius: 16px 14px;
+		-webkit-transform:translate(0, -2px);
+	}
+	&:after {
+		content:"";
+		position:absolute;
+		z-index:1;
+		bottom:-2px;
+		right:-56px;
+		width:26px;
+		height:20px;
+		background:$primary-400;
+		border-bottom-left-radius: 10px;
+		-webkit-transform:translate(-30px, -2px);
+	}
+}
