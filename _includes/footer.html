@@ -2,9 +2,9 @@
 
 
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="../assets/js/headroom.min.js"></script>
-  <script src="../assets/js/baffle.min.js"></script>
-  <script src="../assets/js/script.js"></script>
+  <script src="/assets/js/headroom.min.js"></script>
+  <script src="/assets/js/baffle.min.js"></script>
+  <script src="/assets/js/script.js"></script>
 
 
   {% if page.scroll-animation %}
@@ -35,14 +35,14 @@
 
 
   {% if page.prettify %}
-    <script src="../assets/js/highlight.pack.js"></script>
+    <script src="/assets/js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   {% endif %}
 
 
   {% if page.custom_js %}
     {% for script in page.custom_js %}
-    <script src="../assets/js/{{ script }}.js"></script>
+    <script src="/assets/js/{{ script }}.js"></script>
     {% endfor %}
   {% endif %}
 
