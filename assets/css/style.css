@@ -5300,7 +5300,7 @@ nav.headroom {
   max-height: 140px; }
 
 .hover-blur:hover > section {
-  opacity: 0.6; }
+  opacity: 0.4; }
 
 .hover-unblur:hover {
   opacity: 1 !important; }
