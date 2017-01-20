@@ -1,0 +1,120 @@
+<!-- sliding header -->
+<nav class="headroom color-bg-white border-solid-bottom border-color-calm" {{ page.background-color }}>
+  <div class="row align-center">
+    <div class="large-10 medium-10 small-11 columns">
+      <div class="row">
+
+        <div class="small-2 columns">
+          <p>
+            {% if page.dark-logo %}
+              <a href="/"><img class="logo-topbar" src="/assets/img/logo64_dark.png"></a>
+            {% else %}
+              <a href="/"><img class="logo-topbar" src="/assets/img/logo64_light.png"></a>
+            {% endif %}
+          </p>
+        </div>
+
+        <div class="small-10 columns">
+          <p class="text-right">
+            {% if page.url == '/work/' %}
+              <a href="/work" class="margin-lr05 tablet-up text-dark text-decoration-none text-decoration-strike">Work</a>
+            {% else %}
+              <a href="/work" class="margin-lr05 tablet-up text-dark text-decoration-none">Work</a>
+            {% endif %}
+            {% if page.url == '/services/' %}
+              <a href="/services" class="margin-lr05 tablet-up text-dark text-decoration-none text-decoration-strike">Services</a>
+            {% else %}
+              <a href="/services" class="margin-lr05 tablet-up text-dark text-decoration-none">Services</a>
+            {% endif %}
+            <!-- <a href="/blog" class="text-light opacity-2 margin-lr05 tablet-up">Blog</a> -->
+            <i class="fa fa-bars nav-toggle cursor-pointer"></i>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- full menu -->
+<nav class="nav-fullpage color-bg-cream" id="nav">
+
+  <!-- top bar -->
+  <section>
+    <div class="position-fixed full zindex-1000">
+      <div class="row align-center">
+        <div class="large-10 medium-10 small-11 columns">
+          <div class="row">
+
+            <div class="small-6 columns">
+              <p>
+                {% if page.dark-logo %}
+                  <a href="/"><img class="logo-topbar" src="/assets/img/logo64_dark.png"></a>
+                {% else %}
+                  <a href="/"><img class="logo-topbar" src="/assets/img/logo64_light.png"></a>
+                {% endif %}
+              </p>
+            </div>
+
+            <div class="small-6 columns">
+              <p class="text-right"><i class="fa fa-bars nav-toggle cursor-pointer"></i></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- extra spacing -->
+  <p>
+    <br>
+  </p>
+
+  <!-- menu -->
+  <section>
+    <div class="row align-center">
+      <div class="large-10 medium-10 small-11 columns">
+
+        <ul class="margin-b2 padding-none list-none">
+          <a class="text-dark" href="/work">
+          <li class="padding-1 text-big text-center hover-color-tint-dark-1 cursor-pointer"
+            >Work
+          </li>
+          </a>
+          <hr class="opacity-4">
+          <a class="text-dark" href="/services">
+          <li class="padding-1 text-big text-center hover-color-tint-dark-1 cursor-pointer"
+            >Services
+          </li>
+          </a>
+          <hr class="opacity-4">
+          <a class="text-dark" href="/packages">
+          <li class="padding-1 text-big text-center hover-color-tint-dark-1 cursor-pointer"
+            >Packages
+          </li>
+          </a>
+          <hr class="opacity-4">
+          <!-- <a class="text-dark" href="/lab">
+          <li class="padding-1 text-big text-center hover-color-tint-dark-1 cursor-pointer"
+            >Lab
+          </li>
+          </a>
+          <hr class="opacity-4"> -->
+        </ul>
+
+        <a class="margin-tb1 button full color-bg-primary text-invert text-center" href="mailto:thomas@kimuradigital.com"><strong>Contact Me</strong></a>
+
+        <p class="margin-b1 text-small text-center">
+          <a href="/"><img class="padding-b05" src="/assets/img/logotype_dark.png"></a>
+        </p>
+
+        <p class="text-center text-smaller opacity-3">
+          <a href="/terms">Terms & Conditions</a> </br> Copyright © <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Kimura Digital. All rights reserved.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+</nav>

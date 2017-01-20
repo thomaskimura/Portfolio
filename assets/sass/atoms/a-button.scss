@@ -11,7 +11,7 @@
   white-space: pre;
   cursor: pointer;
   &:hover {
-    @include opacity-1;
+    @include opacity-2;
   }
   &:active {
     @include opacity-2;

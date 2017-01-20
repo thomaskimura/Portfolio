@@ -40,7 +40,7 @@
     {% if page.thumbnail %}
       {{ page.thumbnail }}
     {% else %}
-      http://kimuradigital.com/assets/img/thumbnails/thumbnail-facebook-kimura.png
+      assets/img/thumbnails/thumbnail-facebook-kimura.png
     {% endif %}">
 
     <!-- Twitter Card data -->
@@ -63,7 +63,7 @@
     {% if page.thumbnail %}
       {{ page.thumbnail }}
     {% else %}
-      http://kimuradigital.com/assets/img/thumbnails/thumbnail-facebook-kimura.png
+      assets/img/thumbnails/thumbnail-facebook-kimura.png
     {% endif %}">
 
     <!-- Open Graph data -->
@@ -78,7 +78,7 @@
     {% if page.thumbnail %}
       {{ page.thumbnail }}
     {% else %}
-      http://kimuradigital.com/assets/img/thumbnails/thumbnail-facebook-kimura.png
+      assets/img/thumbnails/thumbnail-facebook-kimura.png
     {% endif %}"/>
     <meta property="og:description" content="
     {% if page.description %}
@@ -89,22 +89,22 @@
 
 
     <!-- UPDATE FAVICON ETC -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/assets/img/favicon/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/assets/img/favicon/manifest.json">
-    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#af3535">
-    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="assets/img/favicon/manifest.json">
+    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#af3535">
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/assets/img/favicon/mstile-144x144.png">
     <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
@@ -115,7 +115,7 @@
     <link href="assets/css/style.min.css" rel="stylesheet">
     {% if page.custom_css %}
       {% for stylesheet in page.custom_css %}
-      <link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css" media="screen" type="text/css">
+      <link rel="stylesheet" href="assets/css/{{ stylesheet }}.css" media="screen" type="text/css">
       {% endfor %}
     {% endif %}
 
@@ -125,128 +125,18 @@
     {% endif %}
 
     <script>
-      // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      //
-      // ga('create', 'UA-70484460-1', 'auto');
-      // ga('send', 'pageview');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-70484460-1', 'auto');
+      ga('send', 'pageview');
+
     </script>
 
   </head>
 
 <body class="color-bg-white">
 
-  <!-- sliding header -->
-  <nav class="headroom color-bg-white border-solid-bottom border-color-calm" {{ page.background-color }}>
-    <div class="row">
-      <div class="large-10 medium-10 small-11 columns small-centered">
-        <div class="row">
-
-          <div class="small-2 columns">
-            <p>
-              {% if page.dark-logo %}
-                <a href="/"><img class="logo-topbar" src="/assets/img/logo64_dark.png"></a>
-              {% else %}
-                <a href="/"><img class="logo-topbar" src="/assets/img/logo64_light.png"></a>
-              {% endif %}
-            </p>
-          </div>
-
-          <div class="small-10 columns">
-            <p class="text-right">
-              {% if page.url == '/work/' %}
-                <a href="/work" class="margin-lr05 tablet-up text-dark text-decoration-none text-decoration-strike">Work</a>
-              {% else %}
-                <a href="/work" class="margin-lr05 tablet-up text-dark text-decoration-none">Work</a>
-              {% endif %}
-              {% if page.url == '/services/' %}
-                <a href="/services" class="margin-lr05 tablet-up text-dark text-decoration-none text-decoration-strike">Services</a>
-              {% else %}
-                <a href="/services" class="margin-lr05 tablet-up text-dark text-decoration-none">Services</a>
-              {% endif %}
-              <!-- <a href="/blog" class="text-light opacity-2 margin-lr05 tablet-up">Blog</a> -->
-              <i class="fa fa-bars nav-toggle cursor-pointer"></i>
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- full menu -->
-  <nav class="nav-fullpage color-bg-cream" id="nav">
-
-    <!-- top bar -->
-    <section>
-      <div class="position-fixed full zindex-1000">
-        <div class="row">
-          <div class="large-10 medium-10 small-11 columns small-centered">
-            <div class="row">
-
-              <div class="small-6 columns">
-                <p>
-                  {% if page.dark-logo %}
-                    <a href="/"><img class="logo-topbar" src="/assets/img/logo64_dark.png"></a>
-                  {% else %}
-                    <a href="/"><img class="logo-topbar" src="/assets/img/logo64_light.png"></a>
-                  {% endif %}
-                </p>
-              </div>
-
-              <div class="small-6 columns">
-                <p class="text-right"><i class="fa fa-bars nav-toggle cursor-pointer"></i></p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- extra spacing -->
-    <p>
-      <br>
-    </p>
-
-    <!-- menu -->
-    <section>
-      <div class="row">
-        <div class="large-10 medium-10 small-11 columns small-centered">
-
-          <ul class="margin-b2 padding-none list-none">
-            <a class="text-dark" href="/work">
-            <li class="padding-1 text-big text-center hover-color-tint-dark-1 cursor-pointer"
-              >Work
-            </li>
-            </a>
-            <hr class="opacity-4">
-            <a class="text-dark" href="/services">
-            <li class="padding-1 text-big text-center hover-color-tint-dark-1 cursor-pointer"
-              >Services
-            </li>
-            </a>
-            <hr class="opacity-4">
-            <a class="text-dark" href="/lab">
-            <li class="padding-1 text-big text-center hover-color-tint-dark-1 cursor-pointer"
-              >Lab
-            </li>
-            </a>
-            <hr class="opacity-4">
-          </ul>
-
-          <p class="margin-b1 text-small text-center">
-            <a href="/"><img class="padding-b05" src="/assets/img/logotype_dark.png"></a>
-          </p>
-
-          <p class="text-center text-smaller opacity-3">
-            <a href="/terms">Terms & Conditions</a> </br> Copyright © <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Kimura Digital. All rights reserved.
-          </p>
-
-        </div>
-      </div>
-    </section>
-
-  </nav>
+  {% include navigation.html %}
