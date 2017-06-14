@@ -5,6 +5,15 @@
 // keyframes defined in mx-animation.scss class
 //================================================//
 
+@media (min-width: 900px) {
+  .animate-border-dark {
+    transition: box-shadow .3s cubic-bezier(.8,.43,0,.48);
+  }
+  .animate-border-dark:hover{
+    box-shadow: $dark-600 10px 10px 0px 0px;
+  }
+}
+
 
 //================================================//
 // GENEARL CLASS

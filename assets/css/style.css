@@ -4774,6 +4774,40 @@ input[type=submit]:active, input[type=button]:active, button:active {
   background: #f8f8f8;
   border-color: #f8f8f8; }
 
+.color-bg-dark {
+  background: #232121;
+  border-color: #232121; }
+
+.color-bg-dark-50 {
+  background: #655f5f; }
+
+.color-bg-dark-100 {
+  background: #655f5f; }
+
+.color-bg-dark-200 {
+  background: #4a4646; }
+
+.color-bg-dark-300 {
+  background: #3d3a3a; }
+
+.color-bg-dark-400 {
+  background: #302d2d; }
+
+.color-bg-dark-500 {
+  background: #232121; }
+
+.color-bg-dark-600 {
+  background: #161515; }
+
+.color-bg-dark-700 {
+  background: #090808; }
+
+.color-bg-dark-800 {
+  background: black; }
+
+.color-bg-dark-900 {
+  background: black; }
+
 .border-none {
   border: none; }
 
@@ -5145,6 +5179,12 @@ input[type=submit]:active, input[type=button]:active, button:active {
 .color-tint-primary-4 {
   background: rgba(239, 68, 55, 0.7); }
 
+@media (min-width: 900px) {
+  .animate-border-dark {
+    transition: box-shadow 0.3s cubic-bezier(0.8, 0.43, 0, 0.48); }
+
+  .animate-border-dark:hover {
+    box-shadow: #161515 10px 10px 0px 0px; } }
 .animation {
   transition-timing-function: cubic-bezier(0.8, 0.43, 0, 0.48);
   animation-fill-mode: both; }
