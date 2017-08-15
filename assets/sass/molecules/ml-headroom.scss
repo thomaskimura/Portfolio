@@ -31,18 +31,19 @@ nav.headroom {
   left: 0;
   height: 100%;
   width: 100%;
-  transform: translateY(-100%);
-  transition-property: transform;
-  transition-duration: 0.4s;
+  opacity: 0;
+  // transform: translateY(-100%);
+  transition-property: opacity;
+  transition-duration: 0.2s;
   transition-timing-function: cubic-bezier(.8,.43,0,.48);
-  z-index: 100;
+  z-index: -100;
   overflow-x: hidden;
 }
 
 .nav-fullpage-visible {
   z-index: 100;
-  opacity:1;
-  transform: translateY(0);
+  opacity: 1;
+  // transform: translateY(0);
 }
 
 .logo-topbar {
