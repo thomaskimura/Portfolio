@@ -1,0 +1,55 @@
+//================================================//
+// PRESET TEXT STYLES
+//================================================//
+
+
+.text-title {
+  @include margin-none;
+  @include padding-tb05;
+  @include text-bigger;
+  @include text-weight-900;
+  @include text-transform-uppercase;
+  @include text-letterspacing-2;
+}
+.text-aside {
+  @include opacity-2;
+  @include text-small;
+  @include text-transform-uppercase;
+}
+.text-tag {
+  @include margin-t05;
+  @include margin-lr05;
+  @include margin-none-l;
+  @include padding-05;
+  @include display-inlineblock;
+  @include text-small;
+  @include color-bg-calm;
+  border-radius: $size-radius;
+}
+.text-note {
+  @include text-small;
+  @include opacity-1;
+  line-height: $size-lineheight-header;
+}
+.text-status {
+  @include margin-lr05;
+  @include margin-none-l;
+  @include padding-05;
+  @include text-small;
+  @include display-inlineblock;
+  border-radius: $size-radius;
+}
+.text-status-ip {
+  @extend .text-status;
+  @include color-bg-primary;
+  @include text-white;
+}
+.text-status-c {
+  @extend .text-status;
+  @include color-bg-success;
+  @include text-white;
+}
+.text-status-p {
+  @extend .text-status;
+  @include color-bg-warning;
+}

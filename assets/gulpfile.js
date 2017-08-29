@@ -1,7 +1,7 @@
 // cd freelance/template/site/boilerplate
 // run below to install all plugins
 //
-// sudo npm install --save-dev gulp-sass gulp-rename gulp-minify-css gulp-livereload gulp-styledown gulp-autoprefixer gulp-load-plugins gulp-autoprefixer gulp-sourcemaps gulp-htmlmin gulp-shell
+// sudo npm install --save-dev gulp-sass gulp-rename gulp-minify-css gulp-livereload gulp-styledown gulp-autoprefixer gulp-load-plugins gulp-autoprefixer gulp-sourcemaps gulp-htmlmin gulp-shell gulp-autoprefixer
 //
 // DURING DEVELOPMENT USE:
 // gulp watch

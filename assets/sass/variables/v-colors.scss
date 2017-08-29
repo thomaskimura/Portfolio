@@ -4,9 +4,7 @@
 //================================================//
 
 // brand colours
-$primary:       #ef4437;
-$navy:          #4c7ea8;
-$midnight:      #072154;
+$primary:       #5267b5;
 $calm:          #e5e3e3;
 $cream:         #f9f7f7;
 
@@ -15,7 +13,7 @@ $cream:         #f9f7f7;
 $alert:      #af3535;
 $success:    #1cc374;
 $warning:    #eadc17;
-$dark:       #232121;
+$dark:       #121121;
 $light:      #f8f8f8;
 
 
@@ -30,28 +28,6 @@ $primary-600: darken($primary, 5%);
 $primary-700: darken($primary, 10%);
 $primary-800: darken($primary, 20%);
 $primary-900: darken($primary, 30%);
-
-$navy-50: lighten($navy, 30%);
-$navy-100: lighten($navy, 25%);
-$navy-200: lighten($navy, 15%);
-$navy-300: lighten($navy, 10%);
-$navy-400: lighten($navy, 5%);
-$navy-500: $navy;
-$navy-600: darken($navy, 5%);
-$navy-700: darken($navy, 10%);
-$navy-800: darken($navy, 20%);
-$navy-900: darken($navy, 30%);
-
-$midnight-50: lighten($midnight, 30%);
-$midnight-100: lighten($midnight, 25%);
-$midnight-200: lighten($midnight, 15%);
-$midnight-300: lighten($midnight, 10%);
-$midnight-400: lighten($midnight, 5%);
-$midnight-500: $midnight;
-$midnight-600: darken($midnight, 5%);
-$midnight-700: darken($midnight, 10%);
-$midnight-800: darken($midnight, 20%);
-$midnight-900: darken($midnight, 30%);
 
 $calm-50: lighten($calm, 10%);
 $calm-100: lighten($calm, 8%);
@@ -143,8 +119,8 @@ $light-800: darken($light, 20%);
 $light-900: darken($light, 30%);
 
 // default text colours
-$color-text-body: $midnight-700;
-$color-text-header: $primary;
+$color-text-body: $dark-500;
+$color-text-header: $dark-800;
 
 // inverted text colours
 $color-text-i-body: white;

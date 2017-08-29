@@ -28,6 +28,9 @@
 @mixin display-initial {
   display: initial;
 }
+@mixin display-inlineblock {
+  display: inline-block;
+}
 @mixin display-print-none {
   @media print {
     display: none;

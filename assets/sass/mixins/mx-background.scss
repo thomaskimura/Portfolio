@@ -13,14 +13,6 @@
   background: $primary;
   border-color: $primary;
 }
-@mixin color-bg-navy {
-  background: $navy;
-  border-color: $navy;
-}
-@mixin color-bg-midnight {
-  background: $midnight;
-  border-color: $midnight;
-}
 @mixin color-bg-calm {
   background: $calm;
   border-color: $calm;
@@ -63,28 +55,6 @@
 @mixin color-bg-primary-700 {background: $primary-700;}
 @mixin color-bg-primary-800 {background: $primary-800;}
 @mixin color-bg-primary-900 {background: $primary-900;}
-
-@mixin color-bg-navy-50 {background: $navy-100;}
-@mixin color-bg-navy-100 {background: $navy-100;}
-@mixin color-bg-navy-200 {background: $navy-200;}
-@mixin color-bg-navy-300 {background: $navy-300;}
-@mixin color-bg-navy-400 {background: $navy-400;}
-@mixin color-bg-navy-500 {background: $navy-500;}
-@mixin color-bg-navy-600 {background: $navy-600;}
-@mixin color-bg-navy-700 {background: $navy-700;}
-@mixin color-bg-navy-800 {background: $navy-800;}
-@mixin color-bg-navy-900 {background: $navy-900;}
-
-@mixin color-bg-midnight-50 {background: $midnight-100;}
-@mixin color-bg-midnight-100 {background: $midnight-100;}
-@mixin color-bg-midnight-200 {background: $midnight-200;}
-@mixin color-bg-midnight-300 {background: $midnight-300;}
-@mixin color-bg-midnight-400 {background: $midnight-400;}
-@mixin color-bg-midnight-500 {background: $midnight-500;}
-@mixin color-bg-midnight-600 {background: $midnight-600;}
-@mixin color-bg-midnight-700 {background: $midnight-700;}
-@mixin color-bg-midnight-800 {background: $midnight-800;}
-@mixin color-bg-midnight-900 {background: $midnight-900;}
 
 @mixin color-bg-calm-50 {background: $calm-100;}
 @mixin color-bg-calm-100 {background: $calm-100;}

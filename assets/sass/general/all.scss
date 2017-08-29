@@ -4,58 +4,43 @@
 //================================================//
 
 
-//================================================//
-// TIMELINE
-.timeline {
-  position: relative;
-  padding: 2em 0;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 4px;
-  background: $light;
-  @media only screen and (min-width: 640px) {
-    left: 50%;
-    margin-left: -2px;
-  }
-}
-
-
-//================================================//
-// INDICATOR
-.indicator {
-  height: .5em;
-  width: 0.5em;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-
-.inline-size {
-  height: 2em;
-}
-
-
-.img-grid {
-  img {
-    max-height: 140px;
-  }
-}
-
-
-.hover-blur:hover > section {
-  opacity: 0.4;
-}
-.hover-unblur:hover {
-  opacity: 1 !important;
-}
-
 .fa {
   vertical-align: middle;
+}
+.logo-topbar {
+  height: 1em;
+  display: inline;
+  vertical-align: middle;
+}
+
+
+.status-bubble {
+  @include display-inlineblock;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(229, 227, 227, 1);
+  }
+  60% {
+    box-shadow: 0 0 0 6px rgba(229, 227, 227, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(229, 227, 227, 0);
+  }
+}
+.status-bubble-ip {
+  @extend .status-bubble;
+  @include color-bg-primary;
+}
+.status-bubble-c {
+  @extend .status-bubble;
+  @include color-bg-success;
+}
+.status-bubble-p {
+  @extend .text-status;
+  @include color-bg-warning;
 }

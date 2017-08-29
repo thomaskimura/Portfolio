@@ -32,16 +32,6 @@
 .border-solid-left {
   @include border-solid-left;
 }
-
-.border-color-primary {@include border-color-primary;}
-.border-color-navy {@include border-color-navy;}
-.border-color-midnight {@include border-color-midnight;}
-.border-color-calm {@include border-color-calm;}
-.border-color-cream {@include border-color-cream;}
-.border-color-alert {@include border-color-alert;}
-.border-color-success {@include border-color-success;}
-.border-color-warning {@include border-color-warning;}
-.border-color-dark {@include border-color-dark;}
-.border-color-light {@include border-color-light;}
-.border-color-white {@include border-color-white;}
-.border-color-black {@include border-color-black;}
+.border-color-calm {
+  border-color: $calm;
+}

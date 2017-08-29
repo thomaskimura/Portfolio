@@ -22,6 +22,9 @@
 .display-inline {
   @include display-inline;
 }
+.display-inlineblock {
+  @include display-inlineblock;
+}
 .display-block {
   @include display-block;
 }
@@ -102,11 +105,4 @@
 // CURSOR
 .cursor-pointer {
   @include cursor-pointer;
-}
-
-
-//================================================//
-// SHADOWS
-.shadow-bottom {
-  @include shadow-bottom;
 }
