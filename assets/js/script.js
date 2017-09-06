@@ -4,7 +4,7 @@ $( document ).ready(function() {
   b.set({
     speed: 100
   });
-  b.reveal(50, 500)
-  $(".baffle").removeClass("display-none");
+  b.reveal(100, 1000)
+  $(".baffle").removeClass("opacity-0");
 
 });

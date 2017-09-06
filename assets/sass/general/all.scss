@@ -1,0 +1,41 @@
+//================================================//
+// TEMPORARY
+// code in here should be split into molecules
+//================================================//
+
+
+.fa {
+  vertical-align: middle;
+}
+
+
+.status-bubble {
+  @include display-inlineblock;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(229, 227, 227, 1);
+  }
+  60% {
+    box-shadow: 0 0 0 6px rgba(229, 227, 227, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0 2px rgba(229, 227, 227, 0);
+  }
+}
+.status-bubble-ip {
+  @extend .status-bubble;
+  @include color-bg-primary;
+}
+.status-bubble-c {
+  @extend .status-bubble;
+  @include color-bg-success;
+}
+.status-bubble-p {
+  @extend .text-status;
+  @include color-bg-warning;
+}

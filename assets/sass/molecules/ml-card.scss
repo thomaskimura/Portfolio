@@ -1,0 +1,62 @@
+//================================================//
+// CARDS
+// styles for container cards
+//================================================//
+
+
+.card {
+  @include margin-t1;
+  @include border-solid;
+  @include color-bg-white;
+  border-color: $calm;
+  border-radius: $size-radius;
+  transition: box-shadow 0.3s cubic-bezier(0.8, 0.43, 0, 0.48);
+  &:hover {
+    opacity: 1;
+    box-shadow: $calm 6px 6px 0px 0px;
+  }
+  .card-title {
+    @include padding-lr1;
+    @include border-solid-bottom;
+    border-color: $calm;
+    h2 {
+      @include margin-none;
+      @include padding-tb05;
+      @include text-big;
+      @include text-weight-900;
+      @include text-transform-uppercase;
+      @include text-letterspacing-2;
+    }
+  }
+  .card-content {
+    @include padding-lr1;
+    @include margin-none;
+  }
+  .card-subhead {
+    @include padding-lr1;
+    @include margin-none;
+    @include text-weight-900;
+    @include text-transform-uppercase;
+    @include text-letterspacing-2;
+  }
+  .card-right {
+    @include border-solid-left;
+    @include text-center;
+    border-color: $calm;
+  }
+  .card-left {
+    @include border-solid-right;
+    @include text-center;
+    border-color: $calm;
+  }
+  .card-footer {
+    @include border-solid-top;
+    @include color-bg-cream;
+    @include padding-lr1;
+    border-color: $calm;
+  }
+}
+.card-nohover:hover {
+  opacity: 1;
+  box-shadow: $calm 0px 0px 0px 0px;
+}

@@ -1,0 +1,37 @@
+//================================================//
+// BORDER
+// classes to add border colours to any
+// element
+//================================================//
+
+
+.border-none {
+  @include border-none;
+}
+.border-wide {
+  @include border-wide;
+}
+.border-dashed {
+  @include border-dashed;
+}
+.border-dotted {
+  @include border-dotted;
+}
+.border-solid {
+  @include border-solid;
+}
+.border-solid-top {
+  @include border-solid-top;
+}
+.border-solid-right {
+  @include border-solid-right;
+}
+.border-solid-bottom {
+  @include border-solid-bottom;
+}
+.border-solid-left {
+  @include border-solid-left;
+}
+.border-color-calm {
+  border-color: $calm;
+}

@@ -1,0 +1,34 @@
+//================================================//
+// BOOKS
+// book styles to show resources etc
+//================================================//
+
+.book {
+  @include padding-1;
+  @include color-bg-white;
+  min-height: 400px;
+  box-shadow: 1px 1px 3px #aaa;
+  transition: box-shadow 0.4s;
+  h2 {
+    @include margin-none;
+    // @include text-big;
+  }
+  @media (max-width: 500px) {
+    min-height: 300px;
+  }
+}
+.book-clear {
+  @include padding-1;
+  min-height: 400px;
+  box-shadow: 1px 1px 3px #aaa;
+  background-color: transparent;
+  border: solid 3px $calm;
+}
+.book:hover{
+  box-shadow:
+  1px 1px 3px #aaa,
+  5px 5px 0px #fff,
+  6px 6px 8px #aaa,
+  10px 10px 0px #fff,
+  11px 11px 13px #aaa;
+}

@@ -1,0 +1,43 @@
+//================================================//
+// NAVBAR
+//================================================//
+
+.logo-topbar {
+  height: 1em;
+  display: inline;
+  vertical-align: middle;
+}
+
+.navbar {
+  @include color-bg-dark-300;
+  @include position-fixed;
+  @include full;
+  @include zindex-1000;
+  .row {
+    @include padding-tb1;
+  }
+  h1 {
+    @include margin-none;
+    @include text-light;
+    @include text-bigger;
+  }
+  a {
+    @include text-white;
+    @include text-decoration-none;
+    line-height: $size-lineheight-header;
+  }
+}
+
+.navbar-spacing {
+  @extend .navbar;
+  @include position-relative;
+  z-index: -1000;
+//   .row {
+//     @include padding-tb05;
+//   }
+//   span {
+//     @include margin-none;
+//     @include text-bigger;
+//     line-height: $size-lineheight-header;
+//   }
+}

@@ -1,0 +1,37 @@
+//================================================//
+// BORDER
+// mixins to add border colours to any
+// element
+//================================================//
+
+
+@mixin border-none {
+  border: none;
+}
+@mixin border-wide {
+  border: solid 5px;
+}
+@mixin border-dashed {
+  border-width: $size-border-width;
+  border-style: dashed;
+}
+@mixin border-dotted {
+  border-width: $size-border-width;
+  border-style: dotted;
+}
+@mixin border-solid {
+  border-width: $size-border-width;
+  border-style: solid;
+}
+@mixin border-solid-top {
+  border-top: $size-border-width solid;
+}
+@mixin border-solid-right {
+  border-right: $size-border-width solid;
+}
+@mixin border-solid-bottom {
+  border-bottom: $size-border-width solid;
+}
+@mixin border-solid-left {
+  border-left: $size-border-width solid;
+}
