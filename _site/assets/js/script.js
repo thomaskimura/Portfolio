@@ -7,4 +7,7 @@ $( document ).ready(function() {
   b.reveal(100, 1000)
   $(".baffle").removeClass("opacity-0");
 
+  $( ".nav-toggle" ).click(function() {
+    $("#nav").toggleClass("nav-fullpage-visible");
+  });
 });

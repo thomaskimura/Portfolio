@@ -117,12 +117,13 @@
 
 
     <!-- stylesheets -->
-    <link href="assets/css/style.min.css" rel="stylesheet">
+    <link href="/assets/css/style.min.css" rel="stylesheet">
     {% if page.custom_css %}
       {% for stylesheet in page.custom_css %}
       <link rel="stylesheet" href="assets/css/{{ stylesheet }}.css" media="screen" type="text/css">
       {% endfor %}
     {% endif %}
+    <script src="https://use.fontawesome.com/b8a1825d4b.js"></script>
 
     {% if page.no-follow %}
       <meta name="robots" content="noindex">

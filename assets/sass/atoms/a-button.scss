@@ -16,8 +16,16 @@
     box-shadow: $dark 7px 7px 0px 0px;
   }
 }
+.button-small {
+  @extend .button;
+  @include padding-05;
+}
 .button-dark {
   @extend .button;
   @include color-bg-dark;
   @include text-white;
+}
+.button-chop-left {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
 }
