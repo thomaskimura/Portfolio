@@ -4,25 +4,22 @@
 //================================================//
 
 .book {
+  min-height: 400px;
+
+  transition: box-shadow 0.4s;
+
+  box-shadow: 1px 1px 3px #aaa;
+
+  @include margin-tb1;
   @include padding-1;
   @include color-bg-white;
-  min-height: 400px;
-  box-shadow: 1px 1px 3px #aaa;
-  transition: box-shadow 0.4s;
+  @include position-relative;
   h2 {
     @include margin-none;
-    // @include text-big;
   }
   @media (max-width: 500px) {
     min-height: 300px;
   }
-}
-.book-clear {
-  @include padding-1;
-  min-height: 400px;
-  box-shadow: 1px 1px 3px #aaa;
-  background-color: transparent;
-  border: solid 3px $calm;
 }
 .book:hover{
   box-shadow:
@@ -31,4 +28,36 @@
   6px 6px 8px #aaa,
   10px 10px 0px #fff,
   11px 11px 13px #aaa;
+}
+
+.book-nohover{
+  min-height: 400px;
+
+  transition: box-shadow 0.4s;
+
+  box-shadow: 1px 1px 3px #aaa;
+  box-shadow: none;
+
+  @include margin-tb1;
+  @include padding-1;
+  @include position-relative;
+  h2 {
+    @include margin-none;
+  }
+  @media (max-width: 500px) {
+    min-height: 300px;
+  }
+}
+.book-nohover:hover{
+  box-shadow: none;
+}
+
+.book-footer {
+  bottom: 1rem;
+  left: 0;
+
+  width: 100%;
+
+  @include padding-lr1;
+  @include position-absolute;
 }

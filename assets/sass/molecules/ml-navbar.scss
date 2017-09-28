@@ -3,8 +3,10 @@
 //================================================//
 
 .logo-topbar {
-  height: 1em;
   display: inline;
+
+  height: 1em;
+
   vertical-align: middle;
 }
 
@@ -22,22 +24,41 @@
     @include text-bigger;
   }
   a {
+    line-height: $size-lineheight-header;
+
     @include text-white;
     @include text-decoration-none;
-    line-height: $size-lineheight-header;
   }
 }
 
 .navbar-spacing {
+  z-index: -1000;
+
   @extend .navbar;
   @include position-relative;
-  z-index: -1000;
-//   .row {
-//     @include padding-tb05;
-//   }
-//   span {
-//     @include margin-none;
-//     @include text-bigger;
-//     line-height: $size-lineheight-header;
-//   }
+  @include color-bg-dark;
+}
+
+.nav-fullpage {
+  position: fixed;
+  z-index: -100;
+  top: 0;
+  left: 0;
+
+  overflow-x: hidden;
+
+  width: 100%;
+  height: 100%;
+
+  transition-timing-function: cubic-bezier(.8,.43,0,.48);
+  transition-duration: 0.2s;
+  transition-property: opacity;
+
+  opacity: 0;
+}
+
+.nav-fullpage-visible {
+  z-index: 1000;
+
+  opacity: 1;
 }

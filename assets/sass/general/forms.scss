@@ -55,15 +55,6 @@ select {
   }
 }
 
-// input[type=submit],input[type=button], button {
-//   &:hover {
-//     @include opacity-2;
-//   }
-//   &:active {
-//     @include opacity-3;
-//   }
-// }
-
 .input-chop-right {
   border-top-right-radius: 0px !important;
   border-bottom-right-radius: 0px !important;

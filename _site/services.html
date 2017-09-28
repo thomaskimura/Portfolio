@@ -105,7 +105,7 @@
   </head>
   <body>
 
-<!-- header -->
+<!-- HEADER -->
 <header class="navbar">
   <div class="row expanded align-center">
     <div class="small-6 columns">
@@ -114,14 +114,14 @@
       </span>
     </div>
     <div class="small-6 columns text-right">
-      <!-- <i class="fa fa-bars nav-toggle text-white cursor-pointer" aria-hidden="true"></i> -->
+      <i class="fa fa-bars nav-toggle text-white cursor-pointer" aria-hidden="true"></i>
     </div>
   </div>
 </header>
-<!-- end header -->
+<!-- END HEADER -->
 
 
-<!-- fake header -->
+<!-- SPACING -->
 <header class="navbar-spacing">
   <div class="row expanded align-center">
     <div class="small-12 columns">
@@ -132,48 +132,88 @@
     </div>
   </div>
 </header>
-<!-- end fake header -->
+<!-- END SPACING -->
 
 
-<!-- full nav -->
-<nav class="nav-fullpage color-bg-cream" id="nav">
+<!-- FULL NAV -->
+<nav class="nav-fullpage color-bg-dark" id="nav">
 
-  <section>
-    <div class="row align-center">
-      <div class="large-8 medium-10 small-12 columns">
+  <!-- SPACING -->
+  <div class="navbar-spacing">
+    <div class="row expanded align-center">
+      <div class="small-6 columns">
+        <span>
+          <a href="/"><img class="logo-topbar" src="/assets/img/logo64_light.png"></a>
+        </span>
+      </div>
+      <div class="small-6 columns text-right">
+        <i class="fa fa-bars nav-toggle text-white cursor-pointer" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  <!-- END SPACING -->
 
-        <ul class="margin-b2 padding-none list-none">
-          <hr class="opacity-4">
-          <a class="text-dark" href="/services">
-          <li class="padding-1 text-big text-center cursor-pointer"
-            >Services
-          </li>
-          </a>
-          <hr class="opacity-4">
-          <a class="text-dark" href="/apps/freebie">
-          <li class="padding-1 text-big text-center cursor-pointer"
-            >Freebie App
-          </li>
-          </a>
-          <hr class="opacity-4">
-        </ul>
+  <section class="padding-t1">
 
-        <a class="margin-tb1 button color-bg-primary full text-center text-white" href="mailto:thomas@kimuradigital.com"><strong>Contact Me</strong></a>
+    <div class="row padding-b2">
 
-        <p class="margin-b1 text-small text-center">
-          <a href="/"><img class="padding-b05" src="/assets/img/logotype_dark.png"></a>
+      <div class="large-8 medium-8 small-12 columns padding-t2">
+        <a class="button-plain-dark full" href="/services">
+          Services
+          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        </a>
+        <hr class="opacity-4">
+        <a class="button-plain-dark full" href="/work">
+          Selected Work
+          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        </a>
+        <!-- <hr class="opacity-4">
+        <a class="button-plain-dark full" href="/resources">
+          Resources
+          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        </a> -->
+        <!-- <hr class="opacity-4">
+        <a class="button-plain-dark full" href="/services">
+          Lab
+          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        </a> -->
+      </div>
+
+      <div class="large-4 medium-4 small-12 columns padding-t2">
+
+        <p class="margin-none-t">
+          <a class="button-invert full text-center" href="/quote"><strong>Request Quote</strong></a>
         </p>
 
-        <p class="text-center text-smaller opacity-3">
-          <a href="/terms">Terms & Conditions</a> </br> Copyright © <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Kimura Digital. All rights reserved.
+        <p class="text-center-small text-white text-big">
+          My name is Thomas Kimura and I'm a Toronto based freelancer. I design and build digital products.
+        </p>
+
+        <p class="text-center-small text-white text-big">
+          Schedule a free <strong><a class="text-white" href="https://calendly.com/kimuradigital/15min/" target="_blank">consultation</a></strong> OR email me at
+          <strong><a class="text-white" href="mailto:hello@kimuradigital.com">hello@kimuradigital.com</a></strong>.
         </p>
 
       </div>
+
     </div>
+
+    <div class="row">
+      <div class="small-12 columns">
+        <hr class="opacity-4">
+        <p class="margin-t2 text-center">
+          <a href="/"><img class="padding-b05" src="/assets/img/logotype_light.png"></a>
+        </p>
+        <p class="text-center text-small opacity-2 text-white margin-none">
+          <a href="/terms" class="text-white">Terms & Conditions</a> - Copyright © <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Kimura Digital. All rights reserved.
+        </p>
+      </div>
+    </div>
+
   </section>
 
 </nav>
-<!-- end full nav -->
+<!-- END FULL NAV -->
 
 <main role="main">
   <article class="color-bg-cream">
@@ -183,7 +223,7 @@
 
     <div class="large-12 medium-12 small-12 columns">
       <h1 class="margin-none-b">What I Offer</h1>
-      <p class="margin-none-t text-bigger baffle opacity-0">
+      <p class="margin-none-t text-bigger">
         I offer an array of digital services for business looking to grow their online presence.
       </p>
     </div>
@@ -191,7 +231,6 @@
   </div>
 </section>
 <!-- END HEADER -->
-
 
 
 <!-- SERVICES -->
@@ -226,13 +265,12 @@
 <!-- END SERVICES -->
 
 
-
 <!-- PROCESS -->
-<!-- <section class="padding-tb4 border-solid-top border-color-calm">
+<section class="padding-tb4 border-solid-top border-color-calm">
 
   <div class="row align-center">
     <div class="large-12 columns">
-      <h5 class="opacity-2 margin-none-t"><span class="border-solid-bottom">PROCESS</span></h5>
+      <h3 class="opacity-2 margin-none-t"><span class="border-solid-bottom">PROCESS</span></h3>
     </div>
   </div>
   <div class="row align-center">
@@ -298,7 +336,7 @@
         </div>
         <div class="card-content">
           <p>
-            At this point I'll begin the design work. Continual progress will be shared for ongoing feedback. This is an ongoing process where we work together until we are both happy.
+            At this point I'll begin the design and development work. Continual progress will be shared for ongoing feedback. This is an ongoing process where we work together until we are both happy.
           </p>
         </div>
       </div>
@@ -326,7 +364,7 @@
     </div>
 
   </div>
-</section> -->
+</section>
 <!-- END PROCESS -->
 
   </article>
@@ -337,7 +375,7 @@
     <div class="large-12 medium-12 small-12 columns text-center">
       <img src="/assets/img/logotype_dark.png"/>
       <p class="margin-none">
-        <a href="mailto:thomas@kimuradigital.com">thomas@kimuradigital.com</a>
+        <a href="mailto:thomas@kimuradigital.com">hello@kimuradigital.com</a>
       </p>
       <p class="text-center text-smaller opacity-3">
         <a href="/terms">Terms & Conditions</a> </br> Copyright © <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Kimura Digital. All rights reserved.
@@ -347,9 +385,11 @@
   </div>
 </section>
 
+
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/assets/js/baffle.min.js"></script>
 <script src="/assets/js/script.js"></script>
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -360,6 +400,7 @@
   ga('create', 'UA-70484460-1', 'auto');
   ga('send', 'pageview');
 </script>
+
 
 <!-- Facebook Pixel Code -->
 <script>
@@ -377,6 +418,17 @@ src="https://www.facebook.com/tr?id=1850564395272191&ev=PageView&noscript=1"
 <!-- DO NOT MODIFY -->
 <!-- End Facebook Pixel Code -->
 
+
+<script>
+  window.fcSettings = {
+    token: "026665d8-9ee0-49a1-a6b7-213c5904b858",
+    host: "https://wchat.freshchat.com",
+    siteId: "http://kimuradigital.com"
+  };
+</script>
+<script src="https://wchat.freshchat.com/js/widget.js" async></script>
+
+
 <script type="application/ld+json">
 { "@context" : "http://schema.org",
   "@type" : "Organization",
@@ -392,6 +444,7 @@ src="https://www.facebook.com/tr?id=1850564395272191&ev=PageView&noscript=1"
     "http://www.twitter.com/_tomki"]
 }
 </script>
+
 
 </body>
 </html>

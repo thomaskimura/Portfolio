@@ -4,3 +4,7 @@
 *.map
 
 js/slick.min.js
+
+node_modules
+
+_site

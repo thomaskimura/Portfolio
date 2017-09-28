@@ -1,10 +1,9 @@
 $( document ).ready(function() {
-  // decode into page
   let b = baffle('.baffle').once();
   b.set({
-    speed: 100
+    speed: 50
   });
-  b.reveal(100, 1000)
+  b.reveal(1000, 500)
   $(".baffle").removeClass("opacity-0");
 
   $( ".nav-toggle" ).click(function() {
