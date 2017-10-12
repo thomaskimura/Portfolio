@@ -9,4 +9,7 @@ $( document ).ready(function() {
   $( ".nav-toggle" ).click(function() {
     $("#nav").toggleClass("nav-fullpage-visible");
   });
+
+  stickybits('.stickybits', { stickyBitStickyOffset: 63 });
+
 });

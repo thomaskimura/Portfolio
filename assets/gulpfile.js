@@ -1,13 +1,21 @@
 // cd freelance/template/site/boilerplate
-// run below to install all plugins
-//
-// sudo npm install --save-dev gulp-sass gulp-rename gulp-minify-css gulp-livereload gulp-styledown gulp-autoprefixer gulp-load-plugins gulp-autoprefixer gulp-sourcemaps gulp-htmlmin gulp-shell gulp-autoprefixer
-//
-// DURING DEVELOPMENT USE:
+// sass --watch sass/style.scss:css/style.min.css --style compressed
+// sass --watch sass/style.scss:css/style.css
+
+// generate site:
+// cd to project directory
+// jekyll serve
+
+// compile css
+// cd to assets folder
 // gulp watch
 
-// MINIFY HTML FOR PRODUCTION:
-// gulp minifyHtml
+// ./node_modules/.bin/kss --source /assets/sass/*.scss --destination /styleguide --css /assets/css/style.min.css
+//  styledown css/style.css config.md > styleguide.html
+// styledown sass/**/*.css config.md > styleguide.html
+
+// DURING DEVELOPMENT USE:
+// gulp watch
 'use strict';
 
 var gulp = require('gulp');
@@ -31,24 +39,26 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('css'))
     .pipe(livereload());
 });
-
-
-// gulp.task('build', shell.task([ 'jekyll serve' ]));
-
-
-gulp.task('minifyHtml', function() {
-  return gulp.src('_site/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('_site/'))
+gulp.task('css', function () {
+  return gulp.src('sass/style.scss')
+    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(autoprefixer())
+    .pipe(rename('style.css'))
+    .pipe(gulp.dest('css'))
+    .pipe(livereload());
 });
-
+gulp.task('styledown', function () {
+  return gulp.src(['sass/**/*.scss', '!sass/framework/**/*.scss'])
+    .pipe(styledown({
+      config: 'config.md',
+      filename: 'index.html'
+    }))
+    .pipe(gulp.dest('../styleguide'));
+});
 
 gulp.task('watch', function() {
   livereload.listen();
   gulp.watch('sass/**/*.scss', ['sass']);
-  // gulp.watch([
-  //   '_includes/**/*.html',
-  //   '_layouts/**/*.html',
-  //   '_posts/**/*'
-  // ], ['build']);
+  gulp.watch('sass/**/*.scss', ['css']);
+  gulp.watch('sass/**/*.scss', ['styledown']);
 });

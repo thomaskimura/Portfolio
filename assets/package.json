@@ -1,13 +1,9 @@
 {
-  "name": "worklist",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "author": "Thomas Kimura",
   "devDependencies": {
     "gulp-autoprefixer": "^4.0.0",
     "gulp-htmlmin": "^3.0.0",
@@ -18,6 +14,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-shell": "^0.6.3",
     "gulp-sourcemaps": "^2.6.0",
-    "gulp-styledown": "0.0.2"
+    "gulp-styledown": "0.0.2",
+    "styledown": "^2.0.0-pre1"
   }
 }

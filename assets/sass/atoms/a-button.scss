@@ -1,8 +1,21 @@
-//================================================//
-// button
-//================================================//
+/**
+* ## Buttons
+*/
+
+/**
+* Buttons can be applied on either anchors or buttons - &lt;a&gt; &lt;button&gt;
+*/
 
 
+
+/**
+* Button:
+* `.button`
+*
+*     @example
+*     <a class="button">Button</a>
+*     <button class="button">Button</button>
+*/
 .button {
   @include display-inlineblock;
   @include padding-1;
@@ -25,11 +38,29 @@
 }
 
 
+/**
+* Button:
+* `.button-primary`
+*
+*     @example
+*     <a class="button-primary">Button</a>
+*/
 .button-primary {
   @extend .button;
   @include text-white;
   @include color-bg-primary;
 }
+
+
+/**
+* Button:
+* `.button-invert`
+*
+*     @example
+*     <div class="color-bg-dark padding-1">
+*       <a class="button-invert">Button</a>
+*      </div>
+*/
 .button-invert {
   @extend .button;
   @include text-white;
@@ -38,6 +69,17 @@
     box-shadow: white 7px 7px 0px 0px;
   }
 }
+
+
+/**
+* Button:
+* `.button-plain-dark`
+*
+*     @example
+*     <div class="color-bg-dark padding-1">
+*       <a class="button-plain-dark">Button</a>
+*      </div>
+*/
 .button-plain-dark {
   @extend .button;
   @include text-white;
@@ -46,6 +88,15 @@
     border-color: $cream-900;
   }
 }
+
+
+/**
+* Button:
+* `.button-clear`
+*
+*     @example
+*     <a class="button-clear">Button</a>
+*/
 .button-clear {
   @extend .button;
   border: none;
@@ -53,12 +104,28 @@
     box-shadow: none;
   }
 }
+
+
+/**
+* Button:
+* `.button-small`
+*
+*     @example
+*     <a class="button-small">Button</a>
+*/
 .button-small {
   @extend .button;
   @include padding-05;
 }
 
 
+/**
+* Button:
+* `.button-chop-left`
+*
+*     @example
+*     <a class="button-small button-chop-left">Button</a>
+*/
 .button-chop-left {
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
