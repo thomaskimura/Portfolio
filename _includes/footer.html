@@ -19,7 +19,18 @@
 <script src="/assets/js/baffle.min.js"></script>
 <script src="/assets/js/stickybits.min.js"></script>
 <script src="/assets/js/script.js"></script>
-
+<script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.0"></script>
+<script>
+  // parse emojis
+  var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  if (iOS) {
+    // not ios
+  } else if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+    // not mac
+  } else {
+    twemoji.parse(document.body);
+  }
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -21,6 +21,11 @@
   @include opacity-1;
   line-height: $size-lineheight-header;
 }
+.text-extended {
+  @include text-small;
+  @include text-letterspacing-2;
+  @include text-transform-uppercase;
+}
 .text-tag {
   @include margin-t05;
   @include margin-lr05;

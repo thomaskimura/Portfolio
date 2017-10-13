@@ -3624,6 +3624,12 @@ select:focus {
   line-height: 1.2;
 }
 
+.text-extended {
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .text-tag {
   margin-top: 0.5em;
   margin-left: 0.5em;
@@ -4131,4 +4137,11 @@ select:focus {
 .fa {
   vertical-align: middle;
   line-height: 1.618 !important;
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
 }

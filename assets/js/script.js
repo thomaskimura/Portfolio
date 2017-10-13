@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+
+  
   let b = baffle('.baffle').once();
   b.set({
     speed: 50
@@ -11,5 +13,6 @@ $( document ).ready(function() {
   });
 
   stickybits('.stickybits', { stickyBitStickyOffset: 63 });
+
 
 });

@@ -28,6 +28,19 @@
 <!-- END SPACING -->
 
 
+{% if page.url == "/" %}
+<!-- BANNER -->
+<a href="/resources/ecommerce-report-card">
+<div class="row expanded align-center color-bg-primary padding-tb05">
+  <div class="small-12 columns text-white text-extended">
+    &#128293; CLAIM YOUR FREE ECOMMERCE REPORT CARD <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+  </div>
+</div>
+</a>
+<!-- END BANNER -->
+{% endif %}
+
+
 <!-- FULL NAV -->
 <nav class="nav-fullpage color-bg-dark" id="nav">
 
@@ -40,7 +53,7 @@
         </span>
       </div>
       <div class="small-6 columns text-right">
-        <i class="fa fa-bars nav-toggle text-white cursor-pointer" aria-hidden="true"></i>
+        <i class="fa fa-close nav-toggle text-white cursor-pointer" aria-hidden="true"></i>
       </div>
     </div>
   </div>
@@ -58,6 +71,11 @@
         <hr class="opacity-4">
         <a class="button-plain-dark full" href="/work">
           Selected Work
+          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        </a>
+        <hr class="opacity-4">
+        <a class="button-plain-dark full" href="/resources">
+          Resources
           <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
         </a>
       </div>
