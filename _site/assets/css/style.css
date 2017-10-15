@@ -3319,6 +3319,10 @@ select:focus {
   border-color: #e5e3e3;
 }
 
+.border-radius {
+  border-radius: 3px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -3490,7 +3494,7 @@ select:focus {
 }
 
 .display-none {
-  display: none;
+  display: none !important;
 }
 
 .display-inline {

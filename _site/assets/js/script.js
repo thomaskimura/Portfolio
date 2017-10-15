@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-  
+
   let b = baffle('.baffle').once();
   b.set({
     speed: 50
@@ -14,5 +14,19 @@ $( document ).ready(function() {
 
   stickybits('.stickybits', { stickyBitStickyOffset: 63 });
 
+  $( ".openToggle" ).click(function() {
+    var element = $(this).attr("data-element");
+    $("#"+element).toggleClass("display-none");
+  });
+
+  $( ".unchecked" ).click(function() {
+    $(this).addClass("display-none");
+    $(this).next().removeClass("display-none");
+  });
+
+  $( ".checked" ).click(function() {
+    $(this).addClass("display-none");
+    $(this).prev().removeClass("display-none");
+  });
 
 });
