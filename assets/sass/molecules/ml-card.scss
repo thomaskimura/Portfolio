@@ -8,6 +8,7 @@
   @include margin-t1;
   @include border-solid;
   @include color-bg-white;
+  @include text-decoration-none;
   border-color: $calm;
   border-radius: $size-radius;
   transition: box-shadow 0.3s cubic-bezier(0.8, 0.43, 0, 0.48);
@@ -55,6 +56,10 @@
     @include padding-lr1;
     border-color: $calm;
   }
+}
+.card-primary {
+  @extend .card;
+  border-color: $primary;
 }
 .card-nohover:hover {
   opacity: 1;

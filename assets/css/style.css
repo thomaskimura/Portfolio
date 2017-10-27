@@ -3903,11 +3903,12 @@ select:focus {
   position: absolute;
 }
 
-.card {
+.card, .card-primary {
   margin-top: 1em;
   border-width: 3px;
   border-style: solid;
   background: white;
+  text-decoration: none;
   border-color: #e5e3e3;
   border-radius: 3px;
   -webkit-transition: -webkit-box-shadow 0.3s cubic-bezier(0.8, 0.43, 0, 0.48);
@@ -3916,20 +3917,20 @@ select:focus {
   transition: box-shadow 0.3s cubic-bezier(0.8, 0.43, 0, 0.48), -webkit-box-shadow 0.3s cubic-bezier(0.8, 0.43, 0, 0.48);
 }
 
-.card:hover {
+.card:hover, .card-primary:hover {
   opacity: 1;
   -webkit-box-shadow: #e5e3e3 6px 6px 0px 0px;
           box-shadow: #e5e3e3 6px 6px 0px 0px;
 }
 
-.card .card-title {
+.card .card-title, .card-primary .card-title {
   padding-left: 1em;
   padding-right: 1em;
   border-bottom: 3px solid;
   border-color: #e5e3e3;
 }
 
-.card .card-title h2 {
+.card .card-title h2, .card-primary .card-title h2 {
   margin: 0 !important;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -3939,13 +3940,13 @@ select:focus {
   letter-spacing: 2px;
 }
 
-.card .card-content {
+.card .card-content, .card-primary .card-content {
   padding-left: 1em;
   padding-right: 1em;
   margin: 0 !important;
 }
 
-.card .card-subhead {
+.card .card-subhead, .card-primary .card-subhead {
   padding-left: 1em;
   padding-right: 1em;
   margin: 0 !important;
@@ -3954,25 +3955,29 @@ select:focus {
   letter-spacing: 2px;
 }
 
-.card .card-right {
+.card .card-right, .card-primary .card-right {
   border-left: 3px solid;
   text-align: center;
   border-color: #e5e3e3;
 }
 
-.card .card-left {
+.card .card-left, .card-primary .card-left {
   border-right: 3px solid;
   text-align: center;
   border-color: #e5e3e3;
 }
 
-.card .card-footer {
+.card .card-footer, .card-primary .card-footer {
   border-top: 3px solid;
   background: #f9f7f7;
   border-color: #f9f7f7;
   padding-left: 1em;
   padding-right: 1em;
   border-color: #e5e3e3;
+}
+
+.card-primary {
+  border-color: #5e15ec;
 }
 
 .card-nohover:hover {
