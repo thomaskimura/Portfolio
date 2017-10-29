@@ -1,7 +1,8 @@
 <!--
 DONE add scrapbook dribbble
 DONE add logofolio
-TODO update work page with screenshots
+DONE update work page with screenshots
+TODO minize all photos
 TODO create lab page (signly, inked, maptastic, toggle, nodify)
 TODO add avatars to reviews
 TODO review code
