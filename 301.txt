@@ -1,1 +1,1 @@
-/resources/free-shopify-setup https://freeshopifysetup.com
+/resources/free-shopify-setup* https://freeshopifysetup.com
