@@ -1,4 +1,4 @@
-/ https://brickspacelab.com/
+/* https://brickspacelab.com/
 /services* https://brickspacelab.com/
 /work* https://brickspacelab.com/
 /apps/freebie* https://brickspacelab.com/apps/freebies
