@@ -1,1 +1,8 @@
-/resources/free-shopify-setup* https://freeshopifysetup.com
+/ https://brickspacelab.com/
+/services* https://brickspacelab.com/
+/work* https://brickspacelab.com/
+/apps/freebie* https://brickspacelab.com/apps/freebies
+/resources/free-shopify-setup* https://freeshopifysetup.com/
+/resources/shopify-launch-checklist*  https://brickspacelab.com/
+/resources/ecommerce-report-card* https://brickspacelab.com/
+/quote* https://brickspacelab.com/quote
